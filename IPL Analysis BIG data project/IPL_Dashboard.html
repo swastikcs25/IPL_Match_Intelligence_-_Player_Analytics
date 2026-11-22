@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>🏏 IPL Analytics Dashboard</title>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+<style>
+  :root {
+    --bg: #0B132B;
+    --card: #1C2541;
+    --border: #3A506B;
+    --gold: #F5B700;
+    --cyan: #00B4D8;
+    --coral: #EF476F;
+    --green: #06D6A0;
+    --amber: #F77F00;
+    --text: #FFFFFF;
+    --muted: #CBD5E1;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, sans-serif; min-height: 100vh; }
+
+  /* ── HEADER ── */
+  .header {
+    background: linear-gradient(135deg, #0B132B 0%, #1C2541 50%, #0B132B 100%);
+    border-bottom: 2px solid var(--gold);
+    padding: 20px 32px;
+    display: flex; align-items: center; justify-content: space-between;
+  }
+  .header h1 { font-size: 1.6rem; font-weight: 700; color: var(--gold); letter-spacing: 1px; }
+  .header p  { color: var(--muted); font-size: .8rem; margin-top: 2px; }
+  .live-badge {
+    background: var(--coral); color: #fff; padding: 4px 12px;
+    border-radius: 20px; font-size: .75rem; font-weight: 600; letter-spacing: 1px;
+  }
+
+  /* ── TABS ── */
+  .tabs { display: flex; gap: 4px; padding: 16px 32px 0; border-bottom: 1px solid var(--border); }
+  .tab {
+    padding: 10px 22px; border-radius: 8px 8px 0 0; cursor: pointer;
+    font-size: .85rem; font-weight: 600; color: var(--muted);
+    background: transparent; border: none; transition: all .2s;
+  }
+  .tab:hover { color: var(--text); background: rgba(255,255,255,.05); }
+  .tab.active { background: var(--card); color: var(--gold); border-top: 2px solid var(--gold); }
+
+  /* ── PAGES ── */
+  .page { display: none; padding: 24px 32px; }
+  .page.active { display: block; }
+
+  /* ── KPI CARDS ── */
+  .kpi-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .kpi {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px; text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .kpi::before {
+    content: ''; position: absolute; top: 0; left: 0; right: 0; height: 3px;
+    background: var(--accent, var(--gold));
+  }
+  .kpi-val { font-size: 2rem; font-weight: 800; color: var(--accent, var(--gold)); line-height: 1; }
+  .kpi-lbl { font-size: .75rem; color: var(--muted); margin-top: 6px; }
+
+  /* ── CHART CARDS ── */
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 20px; margin-bottom: 20px; }
+  .grid-1 { margin-bottom: 20px; }
+  @media(max-width: 900px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+
+  .card {
+    background: var(--card); border: 1px solid var(--border);
+    border-radius: 12px; padding: 20px;
+  }
+  .card h3 { font-size: .85rem; color: var(--muted); margin-bottom: 16px; font-weight: 600; letter-spacing: .5px; text-transform: uppercase; }
+  .chart-wrap { position: relative; }
+
+  /* ── TABLE ── */
+  .tbl-wrap { overflow-x: auto; }
+  table { width: 100%; border-collapse: collapse; font-size: .82rem; }
+  th { background: rgba(245,183,0,.12); color: var(--gold); padding: 10px 14px; text-align: left; font-weight: 600; }
+  td { padding: 9px 14px; border-bottom: 1px solid rgba(58,80,107,.5); color: var(--muted); }
+  tr:hover td { background: rgba(255,255,255,.03); color: var(--text); }
+  .badge { display: inline-block; padding: 2px 10px; border-radius: 20px; font-size: .72rem; font-weight: 700; }
+  .badge-gold  { background: rgba(245,183,0,.2);  color: var(--gold); }
+  .badge-cyan  { background: rgba(0,180,216,.2);  color: var(--cyan); }
+  .badge-coral { background: rgba(239,71,111,.2); color: var(--coral); }
+  .badge-green { background: rgba(6,214,160,.2);  color: var(--green); }
+
+  /* ── PROGRESS BARS ── */
+  .progress-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; }
+  .progress-label { width: 160px; font-size: .78rem; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex-shrink: 0; }
+  .progress-bar-bg { flex: 1; height: 8px; background: rgba(255,255,255,.08); border-radius: 4px; overflow: hidden; }
+  .progress-bar { height: 100%; border-radius: 4px; transition: width .6s ease; }
+  .progress-val { width: 44px; font-size: .78rem; color: var(--text); font-weight: 600; text-align: right; }
+
+  /* ── TOSS DIAL ── */
+  .dial-row { display: flex; justify-content: space-around; align-items: center; padding: 10px 0; }
+  .dial-stat { text-align: center; }
+  .dial-stat .big { font-size: 2.4rem; font-weight: 800; }
+  .dial-stat .sub { font-size: .75rem; color: var(--muted); margin-top: 4px; }
+  .vs-sep { font-size: 1.5rem; color: var(--border); font-weight: 300; }
+
+  /* ── FOOTER ── */
+  footer { text-align: center; padding: 20px; color: var(--border); font-size: .75rem; border-top: 1px solid var(--border); margin-top: 10px; }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <div>
+    <h1>🏏 IPL Big Data Analytics</h1>
+    <p>Databricks Lakehouse · Power BI PBIP · Open-Meteo Weather Intelligence</p>
+  </div>
+  <span class="live-badge">LIVE DATA</span>
+</div>
+
+<!-- TABS -->
+<div class="tabs">
+  <button class="tab active" onclick="switchTab('exec')">📊 Executive Summary</button>
+  <button class="tab" onclick="switchTab('toss')">🪙 Toss Strategy</button>
+  <button class="tab" onclick="switchTab('venue')">🏟 Venue & Weather</button>
+  <button class="tab" onclick="switchTab('player')">🏏 Player Analytics</button>
+</div>
+
+<!-- ═══════════════ PAGE 1: EXECUTIVE SUMMARY ═══════════════ -->
+<div class="page active" id="page-exec">
+  <div class="kpi-row">
+    <div class="kpi" style="--accent:var(--gold)">
+      <div class="kpi-val">1,243</div><div class="kpi-lbl">Total Matches Analyzed</div>
+    </div>
+    <div class="kpi" style="--accent:var(--cyan)">
+      <div class="kpi-val">50.5%</div><div class="kpi-lbl">Overall Toss Win %</div>
+    </div>
+    <div class="kpi" style="--accent:var(--green)">
+      <div class="kpi-val">324.8</div><div class="kpi-lbl">Avg Match Score</div>
+    </div>
+    <div class="kpi" style="--accent:var(--coral)">
+      <div class="kpi-val">11.9%</div><div class="kpi-lbl">Rain Affected Matches</div>
+    </div>
+    <div class="kpi" style="--accent:var(--amber)">
+      <div class="kpi-val">42</div><div class="kpi-lbl">Unique Venues</div>
+    </div>
+    <div class="kpi" style="--accent:#9B59B6">
+      <div class="kpi-val">505</div><div class="kpi-lbl">Weather-Enriched Games</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>🏆 Bat vs Field Win Rate</h3>
+      <div class="chart-wrap" style="height:220px"><canvas id="c_winrate"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>☔ Rain vs Clear Match Distribution</h3>
+      <div class="chart-wrap" style="height:220px"><canvas id="c_rain"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card grid-1">
+    <h3>🏅 Top 10 Run Scorers (All Phases)</h3>
+    <div class="tbl-wrap">
+      <table id="tbl-batters"></table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ PAGE 2: TOSS STRATEGY ═══════════════ -->
+<div class="page" id="page-toss">
+  <div class="kpi-row">
+    <div class="kpi" style="--accent:var(--gold)">
+      <div class="kpi-val">1,243</div><div class="kpi-lbl">Total Tosses</div>
+    </div>
+    <div class="kpi" style="--accent:var(--cyan)">
+      <div class="kpi-val">53.7%</div><div class="kpi-lbl">Field First Win %</div>
+    </div>
+    <div class="kpi" style="--accent:var(--coral)">
+      <div class="kpi-val">44.3%</div><div class="kpi-lbl">Bat First Win %</div>
+    </div>
+    <div class="kpi" style="--accent:var(--green)">
+      <div class="kpi-val">628</div><div class="kpi-lbl">Toss Winner Wins</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>🪙 Toss Decision Split</h3>
+      <div class="chart-wrap" style="height:240px"><canvas id="c_toss_donut"></canvas></div>
+      <div class="dial-row" style="margin-top:16px">
+        <div class="dial-stat"><div class="big" style="color:var(--gold)">825</div><div class="sub">Field First</div></div>
+        <div class="vs-sep">vs</div>
+        <div class="dial-stat"><div class="big" style="color:var(--cyan)">418</div><div class="sub">Bat First</div></div>
+      </div>
+    </div>
+    <div class="card">
+      <h3>📊 Total Matches vs Toss Winner Wins</h3>
+      <div class="chart-wrap" style="height:300px"><canvas id="c_toss_bar"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h3>🔑 Key Tactical Insight</h3>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:20px;padding:10px 0">
+      <div>
+        <div style="color:var(--muted);font-size:.8rem;margin-bottom:8px">Toss Winner → Match Winner Rate</div>
+        <div style="display:flex;align-items:center;gap:12px">
+          <div style="font-size:2.5rem;font-weight:800;color:var(--gold)">50.5%</div>
+          <div style="font-size:.8rem;color:var(--muted)">Winning the toss is virtually a coin flip — <strong style="color:var(--coral)">decision execution matters far more</strong></div>
+        </div>
+      </div>
+      <div>
+        <div style="color:var(--muted);font-size:.8rem;margin-bottom:8px">Chase Advantage (Field vs Bat)</div>
+        <div style="background:rgba(0,180,216,.08);border-radius:8px;padding:12px">
+          <div style="font-size:.8rem;color:var(--cyan)">🏆 Field First teams win <strong>+9.4%</strong> more often than Bat First teams (53.7% vs 44.3%)</div>
+          <div style="font-size:.75rem;color:var(--muted);margin-top:6px">Likely driven by dew factor, DLS advantage, and chasing teams setting clear targets</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ PAGE 3: VENUE & WEATHER ═══════════════ -->
+<div class="page" id="page-venue">
+  <div class="kpi-row">
+    <div class="kpi" style="--accent:var(--gold)">
+      <div class="kpi-val">42</div><div class="kpi-lbl">Total Venues</div>
+    </div>
+    <div class="kpi" style="--accent:var(--cyan)">
+      <div class="kpi-val">375.1</div><div class="kpi-lbl">Highest Avg Score (Arun Jaitley)</div>
+    </div>
+    <div class="kpi" style="--accent:var(--coral)">
+      <div class="kpi-val">60</div><div class="kpi-lbl">Rain Affected Games</div>
+    </div>
+    <div class="kpi" style="--accent:var(--green)">
+      <div class="kpi-val">35.6°C</div><div class="kpi-lbl">Avg Max Temperature</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>🏟 Top 10 Venues by Matches Hosted</h3>
+      <div id="venue-bars"></div>
+    </div>
+    <div class="card">
+      <h3>🌡 Top Venues by Average Match Score</h3>
+      <div class="chart-wrap" style="height:300px"><canvas id="c_venue_score"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card grid-1">
+    <h3>🏟 Venue Intelligence Table</h3>
+    <div class="tbl-wrap">
+      <table id="tbl-venues"></table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════ PAGE 4: PLAYER ANALYTICS ═══════════════ -->
+<div class="page" id="page-player">
+  <div class="kpi-row">
+    <div class="kpi" style="--accent:var(--gold)">
+      <div class="kpi-val">9,346</div><div class="kpi-lbl">V Kohli Total Runs (All-time Leader)</div>
+    </div>
+    <div class="kpi" style="--accent:var(--cyan)">
+      <div class="kpi-val">222.9</div><div class="kpi-lbl">AB de Villiers Death SR (Best)</div>
+    </div>
+    <div class="kpi" style="--accent:var(--coral)">
+      <div class="kpi-val">138.1</div><div class="kpi-lbl">DA Warner Powerplay SR (Best)</div>
+    </div>
+  </div>
+
+  <div class="grid-2">
+    <div class="card">
+      <h3>🏅 Top 10 Batters — Total Runs</h3>
+      <div class="chart-wrap" style="height:300px"><canvas id="c_batter_runs"></canvas></div>
+    </div>
+    <div class="card">
+      <h3>⚡ Strike Rate by Match Phase (Top Players)</h3>
+      <div class="chart-wrap" style="height:300px"><canvas id="c_phase_sr"></canvas></div>
+    </div>
+  </div>
+
+  <div class="card grid-1">
+    <h3>📋 Player Phase Efficiency Leaderboard</h3>
+    <div class="tbl-wrap">
+      <table id="tbl-players"></table>
+    </div>
+  </div>
+</div>
+
+<footer>
+  IPL Analytics · Data: Cricsheet 2008–2026 + Open-Meteo Weather API · Built with Databricks Lakehouse + Power BI PBIP
+</footer>
+
+<script>
+// ═══════ DATA ═══════
+const VENUES = [{"v":"Wankhede Stadium, Mumbai","m":132,"s":335.3},{"v":"Eden Gardens, Kolkata","m":107,"s":321.88},{"v":"MA Chidambaram Stadium","m":98,"s":318.24},{"v":"Rajiv Gandhi Intl Stadium","m":90,"s":323.6},{"v":"Feroz Shah Kotla, Delhi","m":74,"s":310.32},{"v":"Sawai Mansingh Stadium","m":68,"s":324.9},{"v":"M Chinnaswamy Stadium","m":62,"s":341.0},{"v":"Dubai Intl Cricket Stadium","m":46,"s":314.13},{"v":"Narendra Modi Stadium","m":45,"s":349.71},{"v":"Maharashtra CA Stadium, Pune","m":42,"s":310.64}];
+const BATTERS = [{"n":"V Kohli","r":9346,"pp":129.7,"mid":125.8,"death":188.4},{"n":"RG Sharma","r":7331,"pp":126.3,"mid":122.5,"death":181.1},{"n":"S Dhawan","r":6769,"pp":122.8,"mid":126.5,"death":158.7},{"n":"DA Warner","r":6567,"pp":138.1,"mid":134.8,"death":176.9},{"n":"KL Rahul","r":5828,"pp":128.8,"mid":138.8,"death":178.9},{"n":"SK Raina","r":5536,"pp":133.2,"mid":131.1,"death":170.6},{"n":"MS Dhoni","r":5380,"pp":0,"mid":100.5,"death":175.0},{"n":"AM Rahane","r":5367,"pp":123.2,"mid":122.8,"death":157.6},{"n":"AB de Villiers","r":5181,"pp":120.7,"mid":131.3,"death":222.9},{"n":"SV Samson","r":5181,"pp":127.4,"mid":138.7,"death":191.0}];
+const GOLD='#F5B700', CYAN='#00B4D8', CORAL='#EF476F', GREEN='#06D6A0', AMBER='#F77F00', PURPLE='#9B59B6';
+const GRID_COLOR='rgba(58,80,107,0.5)', LABEL_COLOR='#CBD5E1';
+
+Chart.defaults.color = LABEL_COLOR;
+Chart.defaults.borderColor = GRID_COLOR;
+
+// ═══════ TAB SWITCHING ═══════
+function switchTab(id) {
+  document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  event.target.classList.add('active');
+  document.getElementById('page-'+id).classList.add('active');
+}
+
+// ═══════ CHART HELPERS ═══════
+const baseOptions = (extra={}) => ({
+  responsive: true, maintainAspectRatio: false,
+  plugins: { legend: { labels: { color: LABEL_COLOR, font: { size: 11 } } } },
+  ...extra
+});
+
+// ── PAGE 1: WIN RATE BAR ──
+new Chart(document.getElementById('c_winrate'), {
+  type: 'bar',
+  data: {
+    labels: ['Bat First','Field First'],
+    datasets: [{
+      label: 'Win % When Toss Won',
+      data: [44.26, 53.7],
+      backgroundColor: [CORAL+'CC', CYAN+'CC'],
+      borderColor: [CORAL, CYAN], borderWidth: 2,
+      borderRadius: 6
+    }]
+  },
+  options: {
+    ...baseOptions(), indexAxis: 'y',
+    scales: {
+      x: { max: 70, grid: { color: GRID_COLOR }, ticks: { callback: v => v+'%', color: LABEL_COLOR } },
+      y: { grid: { display: false }, ticks: { color: LABEL_COLOR } }
+    },
+    plugins: { legend: { display: false },
+      tooltip: { callbacks: { label: ctx => ` ${ctx.raw}% match win rate` } }
+    }
+  }
+});
+
+// ── PAGE 1: RAIN DONUT ──
+new Chart(document.getElementById('c_rain'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Clear Matches (88.1%)','Rain Affected (11.9%)'],
+    datasets: [{
+      data: [445, 60],
+      backgroundColor: [CYAN+'CC', CORAL+'CC'],
+      borderColor: [CYAN, CORAL], borderWidth: 2
+    }]
+  },
+  options: {
+    ...baseOptions(), cutout: '65%',
+    plugins: { legend: { position: 'bottom', labels: { padding: 16 } } }
+  }
+});
+
+// ── PAGE 1: BATTER TABLE ──
+(function(){
+  const t = document.getElementById('tbl-batters');
+  t.innerHTML = `<thead><tr><th>#</th><th>Batter</th><th>Total Runs</th><th>PP Strike Rate</th><th>Mid Overs SR</th><th>Death Overs SR</th></tr></thead>`;
+  const tb = document.createElement('tbody');
+  BATTERS.forEach((b,i) => {
+    const badgeClass = i===0?'badge-gold':i<3?'badge-cyan':'badge-green';
+    tb.innerHTML += `<tr>
+      <td><span class="badge ${badgeClass}">${i+1}</span></td>
+      <td><strong style="color:#fff">${b.n}</strong></td>
+      <td style="color:${GOLD};font-weight:700">${b.r.toLocaleString()}</td>
+      <td>${b.pp||'—'}</td>
+      <td>${b.mid||'—'}</td>
+      <td style="color:${b.death>180?CORAL:b.death>160?AMBER:LABEL_COLOR};font-weight:600">${b.death||'—'}</td>
+    </tr>`;
+  });
+  t.appendChild(tb);
+})();
+
+// ── PAGE 2: TOSS DONUT ──
+new Chart(document.getElementById('c_toss_donut'), {
+  type: 'doughnut',
+  data: {
+    labels: ['Field First (66.4%)','Bat First (33.6%)'],
+    datasets: [{
+      data: [825, 418],
+      backgroundColor: [GOLD+'CC', CYAN+'CC'],
+      borderColor: [GOLD, CYAN], borderWidth: 2
+    }]
+  },
+  options: { ...baseOptions(), cutout: '60%',
+    plugins: { legend: { position: 'bottom', labels: { padding: 16 } } }
+  }
+});
+
+// ── PAGE 2: TOSS BAR ──
+new Chart(document.getElementById('c_toss_bar'), {
+  type: 'bar',
+  data: {
+    labels: ['Bat First','Field First'],
+    datasets: [
+      { label: 'Total Matches', data: [418, 825], backgroundColor: CYAN+'55', borderColor: CYAN, borderWidth: 2, borderRadius: 6 },
+      { label: 'Toss Winner Wins', data: [185, 443], backgroundColor: GOLD+'AA', borderColor: GOLD, borderWidth: 2, borderRadius: 6 }
+    ]
+  },
+  options: {
+    ...baseOptions(),
+    scales: {
+      y: { grid: { color: GRID_COLOR }, ticks: { color: LABEL_COLOR } },
+      x: { grid: { display: false }, ticks: { color: LABEL_COLOR } }
+    }
+  }
+});
+
+// ── PAGE 3: VENUE PROGRESS BARS ──
+(function(){
+  const max = VENUES[0].m;
+  const container = document.getElementById('venue-bars');
+  VENUES.forEach((v, i) => {
+    const pct = Math.round(v.m / max * 100);
+    const color = [GOLD,CYAN,GREEN,AMBER,CORAL,PURPLE,GOLD,CYAN,GREEN,AMBER][i];
+    container.innerHTML += `
+      <div class="progress-row">
+        <div class="progress-label" title="${v.v}">${v.v}</div>
+        <div class="progress-bar-bg"><div class="progress-bar" style="width:${pct}%;background:${color}"></div></div>
+        <div class="progress-val">${v.m}</div>
+      </div>`;
+  });
+})();
+
+// ── PAGE 3: VENUE SCORE BAR ──
+const sortedByScore = [...VENUES].sort((a,b)=>b.s-a.s);
+new Chart(document.getElementById('c_venue_score'), {
+  type: 'bar',
+  data: {
+    labels: sortedByScore.map(v => v.v.split(',')[0]),
+    datasets: [{
+      label: 'Avg Match Score (runs)',
+      data: sortedByScore.map(v => v.s),
+      backgroundColor: sortedByScore.map((_,i) => [GOLD,AMBER,GREEN,CYAN,CORAL,PURPLE,GOLD,AMBER,GREEN,CYAN][i]+'BB'),
+      borderColor: sortedByScore.map((_,i) => [GOLD,AMBER,GREEN,CYAN,CORAL,PURPLE,GOLD,AMBER,GREEN,CYAN][i]),
+      borderWidth: 2, borderRadius: 4
+    }]
+  },
+  options: {
+    ...baseOptions(), indexAxis: 'y',
+    scales: {
+      x: { min: 250, grid: { color: GRID_COLOR }, ticks: { color: LABEL_COLOR } },
+      y: { grid: { display: false }, ticks: { color: LABEL_COLOR, font: { size: 10 } } }
+    },
+    plugins: { legend: { display: false } }
+  }
+});
+
+// ── PAGE 3: VENUE TABLE ──
+(function(){
+  const t = document.getElementById('tbl-venues');
+  t.innerHTML = `<thead><tr><th>Venue</th><th>Matches Hosted</th><th>Avg Score</th><th>Score Category</th></tr></thead>`;
+  const tb = document.createElement('tbody');
+  VENUES.forEach(v => {
+    const cat = v.s>=350?'High Scoring':v.s>=330?'Above Average':'Standard';
+    const bc = v.s>=350?'badge-coral':v.s>=330?'badge-gold':'badge-cyan';
+    tb.innerHTML += `<tr>
+      <td style="color:#fff;font-weight:500">${v.v}</td>
+      <td style="color:${CYAN};font-weight:700">${v.m}</td>
+      <td style="color:${GOLD};font-weight:700">${v.s}</td>
+      <td><span class="badge ${bc}">${cat}</span></td>
+    </tr>`;
+  });
+  t.appendChild(tb);
+})();
+
+// ── PAGE 4: BATTER RUNS BAR ──
+new Chart(document.getElementById('c_batter_runs'), {
+  type: 'bar',
+  data: {
+    labels: BATTERS.map(b => b.n),
+    datasets: [{
+      label: 'Total Runs',
+      data: BATTERS.map(b => b.r),
+      backgroundColor: BATTERS.map((_,i) => i===0?GOLD+'EE':CYAN+'88'),
+      borderColor: BATTERS.map((_,i) => i===0?GOLD:CYAN),
+      borderWidth: 2, borderRadius: 5
+    }]
+  },
+  options: {
+    ...baseOptions(), indexAxis: 'y',
+    scales: {
+      x: { grid: { color: GRID_COLOR }, ticks: { color: LABEL_COLOR } },
+      y: { grid: { display: false }, ticks: { color: LABEL_COLOR, font: { size: 11 } } }
+    },
+    plugins: { legend: { display: false } }
+  }
+});
+
+// ── PAGE 4: PHASE SR GROUPED BAR ──
+new Chart(document.getElementById('c_phase_sr'), {
+  type: 'bar',
+  data: {
+    labels: BATTERS.slice(0,8).map(b => b.n.split(' ').pop()),
+    datasets: [
+      { label: 'Powerplay SR', data: BATTERS.slice(0,8).map(b=>b.pp||0), backgroundColor: GREEN+'AA', borderColor: GREEN, borderWidth: 2, borderRadius: 3 },
+      { label: 'Middle Overs SR', data: BATTERS.slice(0,8).map(b=>b.mid||0), backgroundColor: GOLD+'AA', borderColor: GOLD, borderWidth: 2, borderRadius: 3 },
+      { label: 'Death Overs SR', data: BATTERS.slice(0,8).map(b=>b.death||0), backgroundColor: CORAL+'AA', borderColor: CORAL, borderWidth: 2, borderRadius: 3 }
+    ]
+  },
+  options: {
+    ...baseOptions(),
+    scales: {
+      y: { grid: { color: GRID_COLOR }, ticks: { color: LABEL_COLOR } },
+      x: { grid: { display: false }, ticks: { color: LABEL_COLOR, font: { size: 10 } } }
+    }
+  }
+});
+
+// ── PAGE 4: PLAYER TABLE ──
+(function(){
+  const t = document.getElementById('tbl-players');
+  t.innerHTML = `<thead><tr><th>#</th><th>Batter</th><th>Total Runs</th><th>Powerplay SR</th><th>Middle Overs SR</th><th>Death Overs SR</th><th>Best Phase</th></tr></thead>`;
+  const tb = document.createElement('tbody');
+  BATTERS.forEach((b,i) => {
+    const best = b.death>=b.pp&&b.death>=b.mid?`💀 Death (${b.death})`:b.pp>=b.mid?`⚡ Powerplay (${b.pp})`:`🎯 Middle (${b.mid})`;
+    tb.innerHTML += `<tr>
+      <td style="color:${i===0?GOLD:LABEL_COLOR};font-weight:700">${i+1}</td>
+      <td><strong style="color:#fff">${b.n}</strong></td>
+      <td style="color:${GOLD};font-weight:700">${b.r.toLocaleString()}</td>
+      <td style="color:${GREEN}">${b.pp||'—'}</td>
+      <td style="color:${GOLD}">${b.mid||'—'}</td>
+      <td style="color:${CORAL};font-weight:700">${b.death||'—'}</td>
+      <td style="font-size:.78rem">${best}</td>
+    </tr>`;
+  });
+  t.appendChild(tb);
+})();
+</script>
+</body>
+</html>
