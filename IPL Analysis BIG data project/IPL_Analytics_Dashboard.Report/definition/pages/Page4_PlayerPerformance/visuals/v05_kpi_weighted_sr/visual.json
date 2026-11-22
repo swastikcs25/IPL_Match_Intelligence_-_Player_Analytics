@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v05_kpi_weighted_sr",
+  "position": {
+    "x": 332,
+    "y": 96,
+    "z": 4,
+    "width": 300,
+    "height": 100,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Weighted Strike Rate"
+                }
+              },
+              "queryRef": "_Measures.Weighted Strike Rate",
+              "nativeQueryRef": "Weighted Strike Rate"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Weighted Strike Rate'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

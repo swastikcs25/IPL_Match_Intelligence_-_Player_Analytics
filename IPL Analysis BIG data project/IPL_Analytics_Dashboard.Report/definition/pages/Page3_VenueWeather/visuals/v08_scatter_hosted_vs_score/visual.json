@@ -1,0 +1,107 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v08_scatter_hosted_vs_score",
+  "position": {
+    "x": 16,
+    "y": 212,
+    "z": 7,
+    "width": 678,
+    "height": 240,
+    "tabOrder": 7
+  },
+  "visual": {
+    "visualType": "scatterChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold venue stats"
+                    }
+                  },
+                  "Property": "venue"
+                }
+              },
+              "queryRef": "gold venue stats.venue",
+              "nativeQueryRef": "venue",
+              "active": true
+            }
+          ]
+        },
+        "X": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold venue stats"
+                    }
+                  },
+                  "Property": "matches_hosted"
+                }
+              },
+              "queryRef": "gold venue stats.matches_hosted",
+              "nativeQueryRef": "matches_hosted"
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold venue stats"
+                    }
+                  },
+                  "Property": "avg_score_per_match"
+                }
+              },
+              "queryRef": "gold venue stats.avg_score_per_match",
+              "nativeQueryRef": "avg_score_per_match"
+            }
+          ]
+        },
+        "Size": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold venue stats"
+                    }
+                  },
+                  "Property": "matches_hosted"
+                }
+              },
+              "queryRef": "gold venue stats.matches_hosted",
+              "nativeQueryRef": "matches_hosted"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Matches Hosted vs Avg Score per Match (Sized by Venue Volume)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

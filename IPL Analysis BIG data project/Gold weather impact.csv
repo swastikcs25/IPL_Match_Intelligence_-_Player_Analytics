@@ -1,0 +1,506 @@
+match_id,venue,match_date,toss_decision,winner,temp_max,temp_min,precipitation,wind_speed_max,is_rain_affected
+1082600,"Wankhede Stadium, Mumbai",2017-04-12,field,Mumbai Indians,31.6,25.4,0,20.3,0
+1082641,"Wankhede Stadium, Mumbai",2017-05-11,field,Kings XI Punjab,32.2,26.4,0,23.7,0
+1175357,"Eden Gardens, Kolkata",2019-03-24,field,Kolkata Knight Riders,32.8,19.9,0,9.3,0
+1216498,Dubai International Cricket Stadium,2020-10-24,field,Kings XI Punjab,35.7,19.3,0,26,0
+1216540,Sharjah Cricket Stadium,2020-10-12,bat,Royal Challengers Bangalore,35.5,28.2,0,22.9,0
+1254076,"Wankhede Stadium, Mumbai",2021-04-25,bat,Chennai Super Kings,32.7,24.6,0,24.5,0
+1254088,"Sheikh Zayed Stadium, Abu Dhabi",2021-10-08,bat,Mumbai Indians,36.8,27.5,0,22.4,0
+1254107,Sharjah Cricket Stadium,2021-09-25,field,Punjab Kings,36.3,29.1,0,20,0
+1304059,"Wankhede Stadium, Mumbai",2022-04-05,field,Royal Challengers Bangalore,31.4,25,0,25.8,0
+1359507,"Eden Gardens, Kolkata",2023-04-23,field,Chennai Super Kings,33.2,24.7,4.2,17.9,1
+1359528,"Wankhede Stadium, Mumbai",2023-05-09,field,Mumbai Indians,32.6,27.6,0,21.5,0
+1426276,"Sawai Mansingh Stadium, Jaipur",2024-04-22,bat,Rajasthan Royals,36.6,23.3,0,13.3,0
+1426305,"Wankhede Stadium, Mumbai",2024-05-17,field,Lucknow Super Giants,35.3,28.7,0,19,0
+1473473,"Sawai Mansingh Stadium, Jaipur",2025-04-19,bat,Lucknow Super Giants,39.9,27.5,0,17.5,0
+1473481,"Eden Gardens, Kolkata",2025-04-26,bat,null,36.7,27.8,1.5,19.6,1
+1473497,"Sawai Mansingh Stadium, Jaipur",2025-05-18,bat,Punjab Kings,42.4,30.4,0,17.1,0
+1529268,"Narendra Modi Stadium, Ahmedabad",2026-04-17,bat,Gujarat Titans,40.3,26.3,0,12,0
+335997,"Eden Gardens, Kolkata",2008-04-29,bat,Mumbai Indians,36,26.8,0,18.9,0
+501214,"Eden Gardens, Kolkata",2011-04-17,field,Kolkata Knight Riders,36.8,25.9,0.2,16.3,0
+501234,"Eden Gardens, Kolkata",2011-04-30,field,Kolkata Knight Riders,33.3,25.3,0.5,12,0
+501246,"Wankhede Stadium, Mumbai",2011-05-07,field,Mumbai Indians,30.4,25.9,0,17.7,0
+548312,"Sawai Mansingh Stadium, Jaipur",2012-04-08,field,Rajasthan Royals,37.9,21.8,0,17.2,0
+548355,"Wankhede Stadium, Mumbai",2012-05-06,field,Mumbai Indians,30,26.4,0,19,0
+598006,"Wankhede Stadium, Mumbai",2013-04-09,bat,Mumbai Indians,31.2,23.6,0,22.4,0
+598018,"Maharashtra Cricket Association Stadium, Pune",2013-04-17,field,Sunrisers Hyderabad,33.8,18.1,0,17,0
+729283,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-18,bat,Kings XI Punjab,36.8,25.6,0,28,0
+729299,Sharjah Cricket Stadium,2014-04-24,field,Kolkata Knight Riders,38.4,24.5,0,19.8,0
+829723,"Eden Gardens, Kolkata",2015-04-30,field,Kolkata Knight Riders,32.3,24.6,5.4,16,1
+829795,"Wankhede Stadium, Mumbai",2015-05-10,bat,Royal Challengers Bangalore,32.9,26.8,0,22,0
+829805,"Wankhede Stadium, Mumbai",2015-05-14,field,Mumbai Indians,32.6,27.4,0.3,20,0
+980963,"Eden Gardens, Kolkata",2016-05-04,field,Kolkata Knight Riders,34.8,26.9,2.9,13.6,1
+1082647,"Wankhede Stadium, Mumbai",2017-05-16,field,Rising Pune Supergiant,31.8,27.5,0,21.5,0
+1136610,"Wankhede Stadium, Mumbai",2018-05-16,field,Mumbai Indians,32.3,27.3,0,21.6,0
+1216496,Sharjah Cricket Stadium,2020-09-22,field,Rajasthan Royals,38.1,24.1,0,24.2,0
+1216507,Dubai International Cricket Stadium,2020-10-11,bat,Rajasthan Royals,34,28.2,0,25.5,0
+1216510,Dubai International Cricket Stadium,2020-09-24,field,Kings XI Punjab,40.8,25.7,0,23.7,0
+1216516,Dubai International Cricket Stadium,2020-10-02,bat,Sunrisers Hyderabad,35.8,24.2,0,19.6,0
+1216536,Dubai International Cricket Stadium,2020-10-29,field,Chennai Super Kings,31.5,20.2,0,22.7,0
+1254103,Dubai International Cricket Stadium,2021-09-29,field,Royal Challengers Bangalore,37.4,29.4,0,25,0
+1254112,Sharjah Cricket Stadium,2021-10-02,field,Delhi Capitals,35.1,26.3,0,16.9,0
+1254113,Sharjah Cricket Stadium,2021-09-24,field,Chennai Super Kings,36.8,26.7,0,23.2,0
+1304050,"Wankhede Stadium, Mumbai",2022-03-28,field,Gujarat Titans,31.5,24.3,0,22.8,0
+1312199,"Narendra Modi Stadium, Ahmedabad",2022-05-27,field,Rajasthan Royals,40.2,27.5,0,22.4,0
+1359483,"Eden Gardens, Kolkata",2023-04-06,field,Kolkata Knight Riders,36.4,23.8,0,10.9,0
+1370352,"Narendra Modi Stadium, Ahmedabad",2023-05-26,field,Gujarat Titans,41.3,27.8,0.1,24,0
+1422122,"Sawai Mansingh Stadium, Jaipur",2024-03-24,bat,Rajasthan Royals,35.1,20.2,0,22.5,0
+1529285,"Narendra Modi Stadium, Ahmedabad",2026-04-30,field,Gujarat Titans,41.1,28.1,0,17.8,0
+336010,"Eden Gardens, Kolkata",2008-05-08,bat,Kolkata Knight Riders,35.4,26.8,0,15.5,0
+501237,"Wankhede Stadium, Mumbai",2011-05-02,field,Mumbai Indians,30.5,26.4,0,17.2,0
+501267,"Eden Gardens, Kolkata",2011-05-22,field,Mumbai Indians,36.8,28.4,0,19.9,0
+501268,"Wankhede Stadium, Mumbai",2011-05-24,field,Chennai Super Kings,31.3,27.1,1.1,15.5,1
+548334,"Wankhede Stadium, Mumbai",2012-04-22,bat,Kings XI Punjab,33.1,26.2,0,24.2,0
+598005,"Sawai Mansingh Stadium, Jaipur",2013-04-08,field,Rajasthan Royals,35.9,18.8,0,10.3,0
+598053,"Maharashtra Cricket Association Stadium, Pune",2013-05-09,bat,Kolkata Knight Riders,37,22.2,0,17.9,0
+729303,Dubai International Cricket Stadium,2014-04-25,bat,Chennai Super Kings,37.1,22.8,0,25.1,0
+729317,Dubai International Cricket Stadium,2014-04-30,field,Sunrisers Hyderabad,39.4,23.8,0,26.6,0
+829717,"Wankhede Stadium, Mumbai",2015-04-12,field,Kings XI Punjab,29.3,23.9,0,20.5,0
+1082606,"Wankhede Stadium, Mumbai",2017-04-16,field,Mumbai Indians,33.3,25.3,0,27,0
+1082620,"Maharashtra Cricket Association Stadium, Pune",2017-04-26,field,Kolkata Knight Riders,36.1,19,0,17.3,0
+1136570,"Eden Gardens, Kolkata",2018-04-14,field,Sunrisers Hyderabad,36.8,25.4,0.9,17.1,1
+1136593,"Eden Gardens, Kolkata",2018-05-03,field,Kolkata Knight Riders,28.8,24.4,7.1,17.8,1
+1136595,"Maharashtra Cricket Association Stadium, Pune",2018-05-05,field,Chennai Super Kings,37.9,21.9,0,21.9,0
+1175369,"Sawai Mansingh Stadium, Jaipur",2019-04-02,field,Rajasthan Royals,36.3,20.1,0,13,0
+1178399,"Wankhede Stadium, Mumbai",2019-04-10,field,Mumbai Indians,30.8,24.5,0,21.7,0
+1216505,"Sheikh Zayed Stadium, Abu Dhabi",2020-11-02,field,Delhi Capitals,31.8,21.5,0,19.3,0
+1216506,"Sheikh Zayed Stadium, Abu Dhabi",2020-11-01,field,Chennai Super Kings,32.4,21.4,0,18.9,0
+1216526,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-16,bat,Mumbai Indians,35.3,21.3,0,29.4,0
+1216527,Sharjah Cricket Stadium,2020-09-27,field,Rajasthan Royals,35.5,24.5,0,19.2,0
+1216529,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-11,bat,Mumbai Indians,34.3,28,0,24.9,0
+1254091,Sharjah Cricket Stadium,2021-09-30,field,Chennai Super Kings,37,27.3,0,22.7,0
+1254098,"Sheikh Zayed Stadium, Abu Dhabi",2021-09-26,bat,Chennai Super Kings,37.9,29.7,0,30.6,0
+1304115,"Wankhede Stadium, Mumbai",2022-05-21,field,Mumbai Indians,32,28.8,0.1,22.7,0
+1422130,"Narendra Modi Stadium, Ahmedabad",2024-03-31,bat,Gujarat Titans,37,23.9,0,13,0
+1473446,"Narendra Modi Stadium, Ahmedabad",2025-03-29,field,Gujarat Titans,36.9,20.8,0,11.9,0
+1473456,"Eden Gardens, Kolkata",2025-04-08,field,Lucknow Super Giants,36.7,25.9,2.1,10.6,1
+1473460,"Narendra Modi Stadium, Ahmedabad",2025-04-09,field,Gujarat Titans,43.2,27.8,0,15.3,0
+1473490,"Eden Gardens, Kolkata",2025-05-04,bat,Kolkata Knight Riders,31.6,24.5,7.9,14.5,1
+1527693,"Wankhede Stadium, Mumbai",2026-04-12,field,Royal Challengers Bengaluru,33.9,25.3,0,18,0
+1529271,"Eden Gardens, Kolkata",2026-04-19,bat,Kolkata Knight Riders,36.2,27.6,0,15.7,0
+1529312,"Wankhede Stadium, Mumbai",2026-05-24,field,Rajasthan Royals,33.7,30.2,2,16.8,1
+336039,"Wankhede Stadium, Mumbai",2008-05-31,bat,Chennai Super Kings,32,28.5,0,19.5,0
+501222,"Eden Gardens, Kolkata",2011-04-22,field,Royal Challengers Bangalore,32.8,24.8,8.7,10.7,1
+501235,"Sawai Mansingh Stadium, Jaipur",2011-05-01,field,Rajasthan Royals,39,26.4,0,18.2,0
+501245,"Eden Gardens, Kolkata",2011-05-07,bat,Kolkata Knight Riders,34.2,25.8,2.2,17,1
+548344,"Eden Gardens, Kolkata",2012-04-28,bat,Kolkata Knight Riders,37.8,27.1,9.4,22.5,1
+548360,"Wankhede Stadium, Mumbai",2012-05-09,field,Royal Challengers Bangalore,30.1,25.8,0,20.5,0
+598032,"Sawai Mansingh Stadium, Jaipur",2013-04-27,bat,Rajasthan Royals,36.9,24.2,0,22.2,0
+829769,"Wankhede Stadium, Mumbai",2015-05-01,field,Mumbai Indians,31.3,25.9,0,15.2,0
+1082613,"Eden Gardens, Kolkata",2017-04-21,field,Gujarat Lions,34.6,27.8,5.7,30.8,1
+1082628,"Wankhede Stadium, Mumbai",2017-05-01,bat,Mumbai Indians,31.1,24.7,0,29,0
+1136583,"Wankhede Stadium, Mumbai",2018-04-24,field,Sunrisers Hyderabad,32.4,24.9,0,24.3,0
+1136606,"Maharashtra Cricket Association Stadium, Pune",2018-05-13,field,Chennai Super Kings,37.4,22.8,0,22.3,0
+1136616,"Maharashtra Cricket Association Stadium, Pune",2018-05-20,field,Chennai Super Kings,35.6,22,0,20.6,0
+1178406,"Wankhede Stadium, Mumbai",2019-04-15,field,Mumbai Indians,34.6,25.4,0,19.6,0
+1178415,"Sawai Mansingh Stadium, Jaipur",2019-04-22,field,Delhi Capitals,38.7,24,0,16.3,0
+1216492,"Sheikh Zayed Stadium, Abu Dhabi",2020-09-19,field,Chennai Super Kings,40.3,26.5,0,27,0
+1216539,Dubai International Cricket Stadium,2020-09-25,field,Delhi Capitals,40.6,24.7,0,25.6,0
+1254072,"Wankhede Stadium, Mumbai",2021-04-21,field,Chennai Super Kings,31.6,25.5,0.1,21.6,0
+1254073,"Wankhede Stadium, Mumbai",2021-04-22,field,Royal Challengers Bangalore,32.6,25.4,0,27,0
+1254096,"Sheikh Zayed Stadium, Abu Dhabi",2021-09-23,field,Kolkata Knight Riders,36.9,29.3,0,21.9,0
+1254099,"Sheikh Zayed Stadium, Abu Dhabi",2021-09-28,field,Mumbai Indians,37.9,29.2,0,24.8,0
+1254114,Dubai International Cricket Stadium,2021-10-10,field,Chennai Super Kings,36.3,27.5,0,18,0
+1304047,"Wankhede Stadium, Mumbai",2022-03-26,field,Kolkata Knight Riders,31.4,23.9,0,24.8,0
+1304073,"Wankhede Stadium, Mumbai",2022-04-16,field,Royal Challengers Bangalore,30.8,23.7,0,21,0
+1304103,"Maharashtra Cricket Association Stadium, Pune",2022-05-10,bat,Gujarat Titans,36.3,23.8,0.2,22,0
+1426267,"Wankhede Stadium, Mumbai",2024-04-14,field,Chennai Super Kings,32.2,22.1,0,25.4,0
+1527679,"Eden Gardens, Kolkata",2026-04-02,field,Sunrisers Hyderabad,37.7,26,0.9,14.2,1
+501256,"Wankhede Stadium, Mumbai",2011-05-14,bat,Deccan Chargers,31.1,26.4,0,17.9,0
+548365,"Sawai Mansingh Stadium, Jaipur",2012-05-13,bat,Rajasthan Royals,36.9,23.5,0.2,11.3,0
+598049,"Sawai Mansingh Stadium, Jaipur",2013-05-07,bat,Rajasthan Royals,41.1,24.1,0,13.2,0
+598067,"Maharashtra Cricket Association Stadium, Pune",2013-05-19,bat,Pune Warriors,36.3,22.7,0.1,16.3,0
+729307,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-26,field,Kings XI Punjab,36.7,23.2,0,19.6,0
+733973,"Wankhede Stadium, Mumbai",2014-05-03,bat,Mumbai Indians,31.4,25.1,0,18.7,0
+733995,"Wankhede Stadium, Mumbai",2014-05-10,field,Chennai Super Kings,31,27,0,18.1,0
+734043,"Eden Gardens, Kolkata",2014-05-27,field,Kolkata Knight Riders,30.3,25.7,14.2,21.4,1
+829761,"Eden Gardens, Kolkata",2015-05-07,bat,Kolkata Knight Riders,35.9,27.2,0,20.3,0
+980901,"Wankhede Stadium, Mumbai",2016-04-09,bat,Rising Pune Supergiants,33.1,25.4,0,22.5,0
+980947,"Wankhede Stadium, Mumbai",2016-04-28,field,Mumbai Indians,33.4,26.2,0,18.4,0
+980957,"Maharashtra Cricket Association Stadium, Pune",2016-05-01,field,Mumbai Indians,38.2,20.8,0,19,0
+1082604,"Eden Gardens, Kolkata",2017-04-15,field,Kolkata Knight Riders,34,24.8,0.3,26.9,0
+1136561,"Wankhede Stadium, Mumbai",2018-04-07,field,Chennai Super Kings,30.8,23.4,0,25.6,0
+1136617,"Wankhede Stadium, Mumbai",2018-05-22,field,Chennai Super Kings,31.5,27,0,20.6,0
+1136618,"Eden Gardens, Kolkata",2018-05-23,field,Kolkata Knight Riders,31.6,27,15.4,24.5,1
+1175358,"Wankhede Stadium, Mumbai",2019-03-24,field,Delhi Capitals,34.1,23.7,0,25.6,0
+1178420,"Sawai Mansingh Stadium, Jaipur",2019-04-27,field,Rajasthan Royals,41.1,27.8,0,15,0
+1216508,"Sheikh Zayed Stadium, Abu Dhabi",2020-09-23,field,Mumbai Indians,40,25.6,0,25.4,0
+1216525,Dubai International Cricket Stadium,2020-10-10,bat,Royal Challengers Bangalore,34.9,25.3,0,27.3,0
+1216530,Dubai International Cricket Stadium,2020-11-01,field,Kolkata Knight Riders,30.4,20.4,0,16.9,0
+1216534,Dubai International Cricket Stadium,2020-09-21,field,Royal Challengers Bangalore,34.9,25.5,0,22.2,0
+1304093,"Wankhede Stadium, Mumbai",2022-05-02,field,Kolkata Knight Riders,31.8,28.3,0,20.5,0
+1359475,"Narendra Modi Stadium, Ahmedabad",2023-03-31,field,Gujarat Titans,32.7,20.2,0,17.3,0
+1359509,"Narendra Modi Stadium, Ahmedabad",2023-04-25,field,Gujarat Titans,39.6,23.5,0,16.6,0
+1422127,"Sawai Mansingh Stadium, Jaipur",2024-03-28,field,Rajasthan Royals,38.4,22.7,0,15.9,0
+1426262,"Sawai Mansingh Stadium, Jaipur",2024-04-10,field,Gujarat Titans,36,23.5,0.1,24.2,0
+1529279,"Sawai Mansingh Stadium, Jaipur",2026-04-25,field,Sunrisers Hyderabad,41.6,29.9,0,15.7,0
+1529295,"Sawai Mansingh Stadium, Jaipur",2026-05-09,field,Gujarat Titans,38.1,25.4,0,13.8,0
+1529313,"Eden Gardens, Kolkata",2026-05-24,field,Delhi Capitals,36.2,29.6,0.9,16.5,1
+336038,"Wankhede Stadium, Mumbai",2008-05-30,field,Rajasthan Royals,31.9,28.1,0.1,18.8,0
+419135,"Eden Gardens, Kolkata",2010-04-01,bat,Kolkata Knight Riders,38.8,26.4,0.6,18.8,1
+501249,"Sawai Mansingh Stadium, Jaipur",2011-05-09,field,Chennai Super Kings,41.1,24.2,0,26.8,0
+548370,"Wankhede Stadium, Mumbai",2012-05-16,field,Kolkata Knight Riders,30.2,25.9,0,19.2,0
+598038,"Maharashtra Cricket Association Stadium, Pune",2013-04-30,bat,Chennai Super Kings,40.6,22.1,0,20.5,0
+729285,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-18,field,Rajasthan Royals,36.8,25.6,0,28,0
+734027,"Eden Gardens, Kolkata",2014-05-22,field,Kolkata Knight Riders,38.7,28.2,0,21.3,0
+734037,"Eden Gardens, Kolkata",2014-05-24,field,Kolkata Knight Riders,35.1,27.6,0.7,16.8,1
+829721,"Narendra Modi Stadium, Ahmedabad",2015-04-14,bat,Rajasthan Royals,33.6,23,0,9.4,0
+1136607,"Wankhede Stadium, Mumbai",2018-05-13,field,Rajasthan Royals,31.7,26.3,0,22.1,0
+1175370,"Wankhede Stadium, Mumbai",2019-04-03,field,Mumbai Indians,31.1,23.3,0,24,0
+1178426,"Wankhede Stadium, Mumbai",2019-05-02,bat,null,30.2,24.4,0,20.5,0
+1216523,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-10,bat,Kolkata Knight Riders,35.5,28.2,0,28.4,0
+1216541,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-25,bat,Rajasthan Royals,35.2,21.6,0,20.5,0
+1254093,Sharjah Cricket Stadium,2021-10-05,field,Mumbai Indians,35.5,27,0,21.2,0
+1254111,Dubai International Cricket Stadium,2021-09-21,field,Rajasthan Royals,38.1,28,0,26.1,0
+1254117,Dubai International Cricket Stadium,2021-10-15,field,Chennai Super Kings,33.5,24.2,0,17.3,0
+1304083,"Wankhede Stadium, Mumbai",2022-04-24,field,Lucknow Super Giants,32.7,27.3,0,19.8,0
+1304092,"Maharashtra Cricket Association Stadium, Pune",2022-05-01,field,Chennai Super Kings,38.1,21.5,0,19,0
+1359496,"Wankhede Stadium, Mumbai",2023-04-16,field,Mumbai Indians,33.5,24.1,0,25.6,0
+1359527,"Eden Gardens, Kolkata",2023-05-08,bat,Kolkata Knight Riders,38.4,25.7,0,12.4,0
+1359530,"Eden Gardens, Kolkata",2023-05-11,field,Rajasthan Royals,38,26.5,0.4,16.6,0
+1422123,"Narendra Modi Stadium, Ahmedabad",2024-03-24,field,Gujarat Titans,37.2,24.2,0,14.7,0
+1473494,"Eden Gardens, Kolkata",2025-05-07,bat,Chennai Super Kings,36.2,24.9,0.1,10.6,0
+1473501,"Wankhede Stadium, Mumbai",2025-05-21,field,Mumbai Indians,31.6,26.8,2.2,14.3,1
+1527688,"Eden Gardens, Kolkata",2026-04-09,field,Lucknow Super Giants,27.3,21.6,33.6,11.5,1
+1529284,"Wankhede Stadium, Mumbai",2026-04-29,bat,Sunrisers Hyderabad,31.9,26.7,0,20.9,0
+1529299,"Narendra Modi Stadium, Ahmedabad",2026-05-12,field,Gujarat Titans,43.8,30,0,13.2,0
+501218,"Wankhede Stadium, Mumbai",2011-04-20,bat,Mumbai Indians,30.4,25,0,19.2,0
+501263,"Wankhede Stadium, Mumbai",2011-05-20,bat,Rajasthan Royals,31.3,27.3,0,22.5,0
+548325,"Wankhede Stadium, Mumbai",2012-04-16,field,Delhi Daredevils,31.7,25.8,0,18.3,0
+548368,"Eden Gardens, Kolkata",2012-05-14,field,Chennai Super Kings,39.3,28.7,1.2,20.4,1
+597998,"Eden Gardens, Kolkata",2013-04-03,field,Kolkata Knight Riders,37.1,25,0,15.9,0
+598058,"Sawai Mansingh Stadium, Jaipur",2013-05-12,field,Rajasthan Royals,36.4,23.6,0.8,18.6,1
+729295,Sharjah Cricket Stadium,2014-04-22,field,Kings XI Punjab,36.2,24,0,26.5,0
+829705,"Eden Gardens, Kolkata",2015-04-08,field,Kolkata Knight Riders,30.2,24.2,3.5,10,1
+829749,"Narendra Modi Stadium, Ahmedabad",2015-04-24,field,Royal Challengers Bangalore,39.2,23.3,0,12.9,0
+829751,"Wankhede Stadium, Mumbai",2015-04-25,bat,Mumbai Indians,30.8,25.4,0,16.9,0
+1082597,"Wankhede Stadium, Mumbai",2017-04-09,field,Mumbai Indians,34.4,24.2,0,24.5,0
+1082618,"Wankhede Stadium, Mumbai",2017-04-24,field,Rising Pune Supergiant,30.6,25.7,0,16.6,0
+1082644,"Eden Gardens, Kolkata",2017-05-13,field,Mumbai Indians,38.1,27.8,0,21.9,0
+1136588,"Sawai Mansingh Stadium, Jaipur",2018-04-29,bat,Sunrisers Hyderabad,41.2,26.5,0,22.9,0
+1136601,"Eden Gardens, Kolkata",2018-05-09,field,Mumbai Indians,35,27.7,0,24.1,0
+1136620,"Wankhede Stadium, Mumbai",2018-05-27,field,Chennai Super Kings,32.8,28.8,0.3,21.5,0
+1178402,"Wankhede Stadium, Mumbai",2019-04-13,field,Rajasthan Royals,33.4,24.1,0,29.9,0
+1178404,"Eden Gardens, Kolkata",2019-04-14,field,Chennai Super Kings,35,25.7,0,18.8,0
+1178410,"Eden Gardens, Kolkata",2019-04-19,field,Royal Challengers Bangalore,32.7,24.9,0.9,10.5,1
+1216494,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-21,bat,Royal Challengers Bangalore,36.2,21.7,0,21.4,0
+1216503,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-01,field,Mumbai Indians,40.3,28.3,0,22,0
+1216514,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-03,bat,Royal Challengers Bangalore,36.2,25.2,0,19.5,0
+1216520,Sharjah Cricket Stadium,2020-10-26,field,Kings XI Punjab,33,20,0,24.5,0
+1216532,"Sheikh Zayed Stadium, Abu Dhabi",2020-09-29,field,Sunrisers Hyderabad,39.3,26.6,0,19.6,0
+1216543,Dubai International Cricket Stadium,2020-10-14,bat,Delhi Capitals,36.1,22.5,0,31.3,0
+1237181,Dubai International Cricket Stadium,2020-11-10,bat,Mumbai Indians,30.4,22.2,0,20.3,0
+1254061,"Wankhede Stadium, Mumbai",2021-04-12,field,Punjab Kings,32.3,25.5,0,22,0
+1254079,"Narendra Modi Stadium, Ahmedabad",2021-04-27,field,Royal Challengers Bangalore,40.8,28.4,0,21.9,0
+1254101,Dubai International Cricket Stadium,2021-10-08,field,Royal Challengers Bangalore,35,26,0,20.4,0
+1254106,Sharjah Cricket Stadium,2021-10-07,field,Kolkata Knight Riders,37,26.3,0,20.1,0
+1254108,Dubai International Cricket Stadium,2021-09-26,field,Royal Challengers Bangalore,36.7,28.5,0,23.8,0
+1304066,"Wankhede Stadium, Mumbai",2022-04-10,field,Rajasthan Royals,31.7,26.1,0,21.7,0
+1304080,"Wankhede Stadium, Mumbai",2022-04-22,field,Rajasthan Royals,35.5,27,0,25.6,0
+1304105,"Wankhede Stadium, Mumbai",2022-05-12,field,Mumbai Indians,32,28.7,0,19.4,0
+1359497,"Narendra Modi Stadium, Ahmedabad",2023-04-16,field,Rajasthan Royals,39.3,24.5,0,13,0
+1359500,"Sawai Mansingh Stadium, Jaipur",2023-04-19,field,Lucknow Super Giants,37.3,25.9,0,24.1,0
+1359518,"Narendra Modi Stadium, Ahmedabad",2023-05-02,bat,Delhi Capitals,34.3,23.3,0.9,11.9,1
+1359543,"Wankhede Stadium, Mumbai",2023-05-21,field,Mumbai Indians,32.4,28.1,0,21.7,0
+1426269,"Eden Gardens, Kolkata",2024-04-16,field,Rajasthan Royals,38.7,26.5,0,14.5,0
+1426270,"Narendra Modi Stadium, Ahmedabad",2024-04-17,field,Delhi Capitals,42.8,27.4,0,16.2,0
+1473452,"Eden Gardens, Kolkata",2025-04-03,field,Kolkata Knight Riders,37.7,25.4,0.1,10.2,0
+1473475,"Wankhede Stadium, Mumbai",2025-04-20,field,Mumbai Indians,32.1,25.8,0,17.1,0
+1473482,"Wankhede Stadium, Mumbai",2025-04-27,field,Mumbai Indians,32.3,26.2,0,18,0
+1473487,"Sawai Mansingh Stadium, Jaipur",2025-05-01,field,Mumbai Indians,39.8,25.9,0,12.8,0
+1473502,"Narendra Modi Stadium, Ahmedabad",2025-05-22,field,Lucknow Super Giants,41.5,29.7,0,12.8,0
+1529308,"Eden Gardens, Kolkata",2026-05-20,field,Kolkata Knight Riders,37.1,28.7,0,11.5,0
+419154,"Sawai Mansingh Stadium, Jaipur",2010-04-14,bat,Royal Challengers Bangalore,41.3,22.5,0,14.2,0
+501231,"Sawai Mansingh Stadium, Jaipur",2011-04-29,field,Rajasthan Royals,39.4,26.6,0,18.4,0
+548326,"Sawai Mansingh Stadium, Jaipur",2012-04-17,bat,Rajasthan Royals,35,19.9,0,15.7,0
+548336,"Sawai Mansingh Stadium, Jaipur",2012-04-23,field,Royal Challengers Bangalore,34.5,19.1,0,11.2,0
+598022,"Eden Gardens, Kolkata",2013-04-20,bat,Chennai Super Kings,30.3,24.1,11.5,10.6,1
+729301,Dubai International Cricket Stadium,2014-04-25,bat,Sunrisers Hyderabad,37.1,22.8,0,25.1,0
+729309,Sharjah Cricket Stadium,2014-04-27,bat,Delhi Daredevils,36.9,20,0,21.7,0
+729313,Dubai International Cricket Stadium,2014-04-28,field,Kings XI Punjab,39.4,20.2,0,22.1,0
+829735,"Narendra Modi Stadium, Ahmedabad",2015-04-19,bat,Rajasthan Royals,41.1,24.1,0,11.9,0
+1082599,"Maharashtra Cricket Association Stadium, Pune",2017-04-11,field,Delhi Daredevils,39,20.7,0,14.8,0
+1082601,"Eden Gardens, Kolkata",2017-04-13,field,Kolkata Knight Riders,35.3,24.4,0,20.7,0
+1136609,"Eden Gardens, Kolkata",2018-05-15,field,Kolkata Knight Riders,32.7,24.6,0,17,0
+1178401,"Eden Gardens, Kolkata",2019-04-12,field,Delhi Capitals,34,25.7,4.5,13.9,1
+1178422,"Eden Gardens, Kolkata",2019-04-28,field,Kolkata Knight Riders,36.5,27.7,0,22.5,0
+1178431,"Wankhede Stadium, Mumbai",2019-05-05,field,Mumbai Indians,31,26.1,0,20.4,0
+1216499,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-28,field,Mumbai Indians,32.2,20.4,0,22.3,0
+1216518,Dubai International Cricket Stadium,2020-10-22,field,Sunrisers Hyderabad,31.6,19.6,0,18.6,0
+1216528,Dubai International Cricket Stadium,2020-10-13,bat,Chennai Super Kings,36.5,24.8,0,34.8,0
+1216547,Dubai International Cricket Stadium,2020-09-28,field,null,35.7,25.3,0,18.8,0
+1237180,"Sheikh Zayed Stadium, Abu Dhabi",2020-11-08,bat,Delhi Capitals,31.6,25.5,0,23,0
+1254078,"Narendra Modi Stadium, Ahmedabad",2021-04-26,field,Kolkata Knight Riders,41.9,27.3,0,15.9,0
+1254083,"Narendra Modi Stadium, Ahmedabad",2021-04-30,field,Punjab Kings,41.2,28.2,0,16.7,0
+1254097,"Sheikh Zayed Stadium, Abu Dhabi",2021-09-25,field,Delhi Capitals,37.3,30,0,24,0
+1254105,Dubai International Cricket Stadium,2021-09-22,bat,Delhi Capitals,35.2,28.1,0,19.5,0
+1359525,"Narendra Modi Stadium, Ahmedabad",2023-05-07,field,Gujarat Titans,39.7,28.1,0,16.8,0
+1359536,"Narendra Modi Stadium, Ahmedabad",2023-05-15,field,Gujarat Titans,41.7,27.5,0,22.8,0
+1359542,"Eden Gardens, Kolkata",2023-05-20,field,Lucknow Super Giants,36.3,26.7,4,21.4,1
+1473442,"Narendra Modi Stadium, Ahmedabad",2025-03-25,field,Punjab Kings,39.1,24.1,0,7.8,0
+1473458,"Wankhede Stadium, Mumbai",2025-04-07,field,Royal Challengers Bengaluru,35.5,25,0,21.7,0
+1473510,"Narendra Modi Stadium, Ahmedabad",2025-06-01,field,Punjab Kings,39.4,28.1,0.9,20.4,1
+1529289,"Narendra Modi Stadium, Ahmedabad",2026-05-03,field,Gujarat Titans,42.3,28.2,0,18.2,0
+1529290,"Wankhede Stadium, Mumbai",2026-05-04,field,Mumbai Indians,32.2,28.6,0,18.1,0
+1529303,"Eden Gardens, Kolkata",2026-05-16,field,Kolkata Knight Riders,35.4,28,0.8,15.8,1
+336021,"Wankhede Stadium, Mumbai",2008-05-16,field,Mumbai Indians,31.5,27.5,0,16.6,0
+336027,"Eden Gardens, Kolkata",2008-05-20,field,Rajasthan Royals,36.6,27.7,4.2,15.1,1
+501203,"Eden Gardens, Kolkata",2011-04-11,bat,Kolkata Knight Riders,36.1,22.9,0.1,11.3,0
+548307,"Eden Gardens, Kolkata",2012-04-05,field,Delhi Daredevils,34.8,25.4,1.2,17.3,1
+729281,Sharjah Cricket Stadium,2014-04-17,field,Royal Challengers Bangalore,36.7,22.7,0,21.3,0
+729287,Dubai International Cricket Stadium,2014-04-19,field,Royal Challengers Bangalore,38.8,19.6,0,25.4,0
+729289,Dubai International Cricket Stadium,2014-04-19,bat,Delhi Daredevils,38.8,19.6,0,25.4,0
+729315,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-29,bat,null,37.7,23,0,20.1,0
+734023,"Eden Gardens, Kolkata",2014-05-20,field,Kolkata Knight Riders,40.7,28,0,19.1,0
+829823,"Eden Gardens, Kolkata",2015-05-24,field,Mumbai Indians,39.3,29.5,0,25.8,0
+980995,"Eden Gardens, Kolkata",2016-05-16,field,Royal Challengers Bangalore,35.5,28.6,0.2,26.3,0
+1082592,"Maharashtra Cricket Association Stadium, Pune",2017-04-06,field,Rising Pune Supergiant,35.8,17.8,0,18.2,0
+1175361,"Eden Gardens, Kolkata",2019-03-27,field,Kolkata Knight Riders,32.4,20.3,0,14.1,0
+1216502,Sharjah Cricket Stadium,2020-10-31,field,Sunrisers Hyderabad,31.5,20.6,0,19.3,0
+1216531,Sharjah Cricket Stadium,2020-10-15,bat,Kings XI Punjab,35.6,20.6,0,28.1,0
+1216544,Dubai International Cricket Stadium,2020-10-25,bat,Chennai Super Kings,35.1,20.7,0,23.5,0
+1216546,Dubai International Cricket Stadium,2020-10-20,bat,Kings XI Punjab,32.7,20,0,22.5,0
+1254086,"Narendra Modi Stadium, Ahmedabad",2021-05-02,field,Delhi Capitals,39.4,28.5,0,24.9,0
+1254089,"Sheikh Zayed Stadium, Abu Dhabi",2021-10-02,field,Rajasthan Royals,38.4,28.6,0,21,0
+1254109,Dubai International Cricket Stadium,2021-10-03,bat,Kolkata Knight Riders,38.8,29.9,0,29.6,0
+1304087,"Wankhede Stadium, Mumbai",2022-04-28,field,Delhi Capitals,35,26.7,0,21.1,0
+1304098,"Wankhede Stadium, Mumbai",2022-05-07,bat,Rajasthan Royals,32.5,26.6,0,24.7,0
+1304100,"Wankhede Stadium, Mumbai",2022-05-08,bat,Royal Challengers Bangalore,32.7,26.7,0,30,0
+1304107,"Maharashtra Cricket Association Stadium, Pune",2022-05-14,bat,Kolkata Knight Riders,36.1,22.3,0,21.3,0
+1422137,"Sawai Mansingh Stadium, Jaipur",2024-04-06,field,Rajasthan Royals,34.3,22.2,0.5,18.4,0
+1426274,"Eden Gardens, Kolkata",2024-04-21,field,Kolkata Knight Riders,41.1,27.2,0,21.5,0
+1426310,"Narendra Modi Stadium, Ahmedabad",2024-05-22,field,Rajasthan Royals,45.7,30.4,0,18.8,0
+1529267,"Wankhede Stadium, Mumbai",2026-04-16,field,Punjab Kings,32,25.5,0,14.6,0
+1529276,"Wankhede Stadium, Mumbai",2026-04-23,field,Chennai Super Kings,36,27.4,0,21.2,0
+335986,"Eden Gardens, Kolkata",2008-04-20,bat,Kolkata Knight Riders,38.3,26.2,0,12.7,0
+336015,"Sawai Mansingh Stadium, Jaipur",2008-05-11,field,Rajasthan Royals,38.5,24.3,2,15.9,1
+336018,"Wankhede Stadium, Mumbai",2008-05-14,field,Mumbai Indians,30.9,26.3,0,20.9,0
+419161,"Eden Gardens, Kolkata",2010-04-19,bat,Kolkata Knight Riders,38,28,0,26,0
+501204,"Sawai Mansingh Stadium, Jaipur",2011-04-12,bat,Rajasthan Royals,34.3,20.3,0.1,10.7,0
+501225,"Sawai Mansingh Stadium, Jaipur",2011-04-24,field,Rajasthan Royals,37.5,21.3,0,12.1,0
+548377,"Sawai Mansingh Stadium, Jaipur",2012-05-20,bat,Mumbai Indians,40.2,23.9,0,13.4,0
+598003,"Maharashtra Cricket Association Stadium, Pune",2013-04-07,bat,Kings XI Punjab,37.1,17.6,0,18.2,0
+598013,"Eden Gardens, Kolkata",2013-04-14,bat,Kolkata Knight Riders,35.9,26.1,0.4,15.8,0
+598014,"Sawai Mansingh Stadium, Jaipur",2013-04-14,field,Rajasthan Royals,36.2,22.5,0,17.2,0
+598036,"Sawai Mansingh Stadium, Jaipur",2013-04-29,field,Rajasthan Royals,38.9,23.7,0,18.2,0
+598055,"Maharashtra Cricket Association Stadium, Pune",2013-05-11,bat,Mumbai Indians,36.2,22.2,0,19.2,0
+598060,"Wankhede Stadium, Mumbai",2013-05-13,bat,Mumbai Indians,30.9,26.2,0,20,0
+980949,"Maharashtra Cricket Association Stadium, Pune",2016-04-29,field,Gujarat Lions,38.6,22.9,0,18.2,0
+980975,"Eden Gardens, Kolkata",2016-05-08,field,Gujarat Lions,34.6,25.9,1.4,14,1
+981009,"Eden Gardens, Kolkata",2016-05-22,field,Kolkata Knight Riders,34.3,25.2,0,11.8,0
+1082622,"Eden Gardens, Kolkata",2017-04-28,field,Kolkata Knight Riders,37.8,26.7,11.7,18.1,1
+1136587,"Maharashtra Cricket Association Stadium, Pune",2018-04-28,field,Mumbai Indians,40.2,21.3,0,21.7,0
+1216500,Sharjah Cricket Stadium,2020-10-09,field,Delhi Capitals,35.3,25.6,0,21.6,0
+1216533,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-19,bat,Rajasthan Royals,34.9,20.6,0,28.5,0
+1254059,"Wankhede Stadium, Mumbai",2021-04-10,field,Delhi Capitals,31.7,24.4,0,20.8,0
+1254064,"Wankhede Stadium, Mumbai",2021-04-15,field,Rajasthan Royals,33,25.8,0,22,0
+1254069,"Wankhede Stadium, Mumbai",2021-04-19,field,Chennai Super Kings,31.9,25.3,0,20.2,0
+1254087,"Sheikh Zayed Stadium, Abu Dhabi",2021-09-20,bat,Kolkata Knight Riders,40.7,29.3,0,23.5,0
+1254102,Dubai International Cricket Stadium,2021-10-01,field,Punjab Kings,36.6,27,0,21.1,0
+1254110,Dubai International Cricket Stadium,2021-10-04,field,Delhi Capitals,36.8,29.1,0,26,0
+1254115,Sharjah Cricket Stadium,2021-10-11,bat,Kolkata Knight Riders,39.6,25.7,0,26.1,0
+1304069,"Maharashtra Cricket Association Stadium, Pune",2022-04-13,field,Punjab Kings,39.3,23.1,0,11.9,0
+1304111,"Wankhede Stadium, Mumbai",2022-05-17,field,Sunrisers Hyderabad,32,28.2,0,19.5,0
+1304116,"Wankhede Stadium, Mumbai",2022-05-22,bat,Punjab Kings,32.3,29,0.4,23.5,0
+1312197,"Eden Gardens, Kolkata",2022-05-24,field,Gujarat Titans,34.3,24.6,2.4,9.8,1
+1359486,"Wankhede Stadium, Mumbai",2023-04-08,field,Chennai Super Kings,34,26.1,0,21.2,0
+1426266,"Eden Gardens, Kolkata",2024-04-14,field,Kolkata Knight Riders,36.2,23.7,0,10.8,0
+1426289,"Wankhede Stadium, Mumbai",2024-05-03,field,Kolkata Knight Riders,32.7,23.6,0,22.3,0
+1473470,"Wankhede Stadium, Mumbai",2025-04-17,field,Mumbai Indians,31.4,25.8,0.1,17.6,0
+1473472,"Narendra Modi Stadium, Ahmedabad",2025-04-19,field,Gujarat Titans,40.6,26,0,19.1,0
+1473484,"Sawai Mansingh Stadium, Jaipur",2025-04-28,field,Rajasthan Royals,41,26.6,0,15.1,0
+1473488,"Narendra Modi Stadium, Ahmedabad",2025-05-02,field,Gujarat Titans,43.5,27.6,0,15.3,0
+1535465,"Narendra Modi Stadium, Ahmedabad",2026-05-31,field,Royal Challengers Bengaluru,39.3,24.9,0.5,16.3,0
+335985,"Wankhede Stadium, Mumbai",2008-04-20,bat,Royal Challengers Bangalore,31.9,24.2,0,19.7,0
+336017,"Eden Gardens, Kolkata",2008-05-13,bat,Kolkata Knight Riders,36.9,26.7,3.9,11,1
+419109,"Eden Gardens, Kolkata",2010-03-14,field,Kolkata Knight Riders,36,24.5,0.9,15.6,1
+419144,"Eden Gardens, Kolkata",2010-04-07,bat,Kolkata Knight Riders,38.8,25.9,0,16.2,0
+419150,"Sawai Mansingh Stadium, Jaipur",2010-04-11,field,Mumbai Indians,39.8,24.8,0,14.8,0
+501210,"Wankhede Stadium, Mumbai",2011-04-15,field,Kochi Tuskers Kerala,29.8,24.7,0,15.9,0
+501219,"Eden Gardens, Kolkata",2011-04-20,field,Kochi Tuskers Kerala,36.8,26.8,0.5,12.9,0
+548323,"Eden Gardens, Kolkata",2012-04-15,field,Kings XI Punjab,36.6,25.9,0.6,14.8,1
+598063,"Wankhede Stadium, Mumbai",2013-05-15,field,Mumbai Indians,30.7,26.5,0,19.5,0
+729293,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-21,bat,Chennai Super Kings,34.9,19.9,0,19.9,0
+729297,Dubai International Cricket Stadium,2014-04-23,field,Chennai Super Kings,37.1,23.8,0,17.2,0
+829733,"Maharashtra Cricket Association Stadium, Pune",2015-04-18,field,Kolkata Knight Riders,37.5,20.6,0.1,16.8,0
+980903,"Eden Gardens, Kolkata",2016-04-10,field,Kolkata Knight Riders,39.2,26.6,0,13.8,0
+980909,"Eden Gardens, Kolkata",2016-04-13,field,Mumbai Indians,39,25.9,0,17.6,0
+980927,"Wankhede Stadium, Mumbai",2016-04-20,field,Mumbai Indians,31.3,26.4,0,20.3,0
+1082617,"Eden Gardens, Kolkata",2017-04-23,field,Kolkata Knight Riders,34.3,27.8,1.9,27.4,1
+1136574,"Wankhede Stadium, Mumbai",2018-04-17,field,Mumbai Indians,33.7,26.3,0,25.1,0
+1136577,"Maharashtra Cricket Association Stadium, Pune",2018-04-20,field,Chennai Super Kings,35.3,21.7,0,19.9,0
+1136613,"Sawai Mansingh Stadium, Jaipur",2018-05-19,bat,Rajasthan Royals,40.6,27,0,25.1,0
+1178396,"Sawai Mansingh Stadium, Jaipur",2019-04-07,field,Kolkata Knight Riders,39.2,25.1,0,23.2,0
+1178411,"Sawai Mansingh Stadium, Jaipur",2019-04-20,field,Rajasthan Royals,33.1,19.6,0,10.5,0
+1216504,Dubai International Cricket Stadium,2020-09-30,field,Kolkata Knight Riders,40,25.3,0,24.6,0
+1216521,Sharjah Cricket Stadium,2020-10-23,field,Mumbai Indians,31.7,20,0,21.5,0
+1216524,Dubai International Cricket Stadium,2020-10-27,field,Sunrisers Hyderabad,32.4,18.6,0,19.1,0
+1237178,"Sheikh Zayed Stadium, Abu Dhabi",2020-11-06,field,Sunrisers Hyderabad,33,21.3,0,19.8,0
+1254116,Sharjah Cricket Stadium,2021-10-13,field,Kolkata Knight Riders,36.9,22.8,0,19,0
+1304088,"Maharashtra Cricket Association Stadium, Pune",2022-04-29,field,Lucknow Super Giants,39.3,23.8,0,19.8,0
+1304091,"Wankhede Stadium, Mumbai",2022-05-01,bat,Lucknow Super Giants,32,26.5,0,17.8,0
+1359493,"Eden Gardens, Kolkata",2023-04-14,field,Sunrisers Hyderabad,42.2,25.4,0,11.2,0
+1359505,"Wankhede Stadium, Mumbai",2023-04-22,field,Punjab Kings,30.8,24.4,0.1,21.2,0
+1359522,"Sawai Mansingh Stadium, Jaipur",2023-05-05,bat,Gujarat Titans,35.3,19.7,0.5,13.5,0
+1359526,"Sawai Mansingh Stadium, Jaipur",2023-05-07,bat,Sunrisers Hyderabad,38.2,22,0,16.6,0
+1359534,"Sawai Mansingh Stadium, Jaipur",2023-05-14,bat,Royal Challengers Bangalore,42,27.6,0,22.8,0
+1426285,"Eden Gardens, Kolkata",2024-04-29,bat,Kolkata Knight Riders,41.2,28.3,0,20.7,0
+1426298,"Eden Gardens, Kolkata",2024-05-11,field,Kolkata Knight Riders,31.5,25.7,6.8,19.9,1
+336005,"Sawai Mansingh Stadium, Jaipur",2008-05-04,bat,Rajasthan Royals,41.3,27.6,0,20.6,0
+501209,"Sawai Mansingh Stadium, Jaipur",2011-04-15,field,Kolkata Knight Riders,35,19.5,0,10.3,0
+598033,"Wankhede Stadium, Mumbai",2013-04-27,bat,Mumbai Indians,33,25.1,0,22.6,0
+598042,"Maharashtra Cricket Association Stadium, Pune",2013-05-02,bat,Royal Challengers Bangalore,39.2,23.9,0,17.3,0
+598047,"Sawai Mansingh Stadium, Jaipur",2013-05-05,bat,Rajasthan Royals,41.2,27.1,0,15.1,0
+598050,"Wankhede Stadium, Mumbai",2013-05-07,bat,Mumbai Indians,31,26.5,0,18.8,0
+729279,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-16,bat,Kolkata Knight Riders,39.1,22.5,0,23.9,0
+729305,"Sheikh Zayed Stadium, Abu Dhabi",2014-04-26,field,Rajasthan Royals,36.7,23.2,0,19.6,0
+729311,Sharjah Cricket Stadium,2014-04-27,bat,Chennai Super Kings,36.9,20,0,21.7,0
+734031,"Wankhede Stadium, Mumbai",2014-05-23,field,Mumbai Indians,31.6,26.7,0,18.7,0
+734041,"Wankhede Stadium, Mumbai",2014-05-25,field,Mumbai Indians,31.4,26.7,0,20.2,0
+829783,"Wankhede Stadium, Mumbai",2015-05-05,bat,Mumbai Indians,32,25.7,0,16.2,0
+1136603,"Sawai Mansingh Stadium, Jaipur",2018-05-11,bat,Rajasthan Royals,42.5,26.6,0,16.9,0
+1136619,"Eden Gardens, Kolkata",2018-05-25,field,Sunrisers Hyderabad,32.4,27.4,0.1,27.4,0
+1178400,"Sawai Mansingh Stadium, Jaipur",2019-04-11,field,Chennai Super Kings,39.8,23.4,0,18,0
+1216495,Sharjah Cricket Stadium,2020-11-03,field,Sunrisers Hyderabad,30.7,20.6,0,21.2,0
+1216509,Sharjah Cricket Stadium,2020-10-17,bat,Delhi Capitals,35.2,20.6,0,26,0
+1216537,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-30,field,Rajasthan Royals,34.4,21.8,0,24.9,0
+1254075,"Wankhede Stadium, Mumbai",2021-04-24,field,Rajasthan Royals,31.6,24.7,0,24.8,0
+1254082,"Narendra Modi Stadium, Ahmedabad",2021-04-29,field,Delhi Capitals,41.6,28.2,0,17.1,0
+1254092,Sharjah Cricket Stadium,2021-09-28,field,Kolkata Knight Riders,35.9,28.6,0,21.4,0
+1304084,"Wankhede Stadium, Mumbai",2022-04-25,field,Punjab Kings,35.5,25.3,0,25.2,0
+1304099,"Maharashtra Cricket Association Stadium, Pune",2022-05-07,field,Lucknow Super Giants,38.1,21.2,0,19.5,0
+1312198,"Eden Gardens, Kolkata",2022-05-25,field,Royal Challengers Bangalore,33.5,25,22.2,16.9,1
+1359487,"Narendra Modi Stadium, Ahmedabad",2023-04-09,bat,Kolkata Knight Riders,38.3,23.7,0,13,0
+1426263,"Wankhede Stadium, Mumbai",2024-04-11,field,Mumbai Indians,32.7,23,0,21.4,0
+1473511,"Narendra Modi Stadium, Ahmedabad",2025-06-03,field,Royal Challengers Bengaluru,39.2,28.1,0.4,15.3,0
+336025,"Eden Gardens, Kolkata",2008-05-18,bat,Chennai Super Kings,37.9,27.9,0,22.1,0
+419139,"Eden Gardens, Kolkata",2010-04-04,bat,Kings XI Punjab,36.9,26.6,0,19.1,0
+501269,"Wankhede Stadium, Mumbai",2011-05-25,field,Mumbai Indians,31.5,26.9,0,16.7,0
+598019,"Sawai Mansingh Stadium, Jaipur",2013-04-17,bat,Rajasthan Royals,37.1,20.5,0,10.2,0
+598031,"Eden Gardens, Kolkata",2013-04-26,bat,Kolkata Knight Riders,35.4,25.8,0.5,14.7,0
+733983,"Wankhede Stadium, Mumbai",2014-05-06,field,Mumbai Indians,32.5,25.3,0,17,0
+734047,"Wankhede Stadium, Mumbai",2014-05-30,field,Kings XI Punjab,31.5,27.9,0,20.3,0
+829729,"Wankhede Stadium, Mumbai",2015-04-17,bat,Chennai Super Kings,32.1,26.4,0,21.7,0
+829817,"Wankhede Stadium, Mumbai",2015-05-19,bat,Mumbai Indians,31.9,27.4,0,18.2,0
+980917,"Wankhede Stadium, Mumbai",2016-04-16,field,Gujarat Lions,30.9,24.7,0,21,0
+1082629,"Maharashtra Cricket Association Stadium, Pune",2017-05-01,field,Rising Pune Supergiant,38.2,18.3,0,24.3,0
+1082645,"Maharashtra Cricket Association Stadium, Pune",2017-05-14,field,Rising Pune Supergiant,35.9,25.6,2.1,15.7,1
+1136581,"Sawai Mansingh Stadium, Jaipur",2018-04-22,bat,Rajasthan Royals,35.4,22.2,0,14.3,0
+1136590,"Maharashtra Cricket Association Stadium, Pune",2018-04-30,field,Chennai Super Kings,37.4,22,0,23.5,0
+1175359,"Sawai Mansingh Stadium, Jaipur",2019-03-25,field,Kings XI Punjab,31.6,20.1,0.3,25.4,0
+1216513,Dubai International Cricket Stadium,2020-10-04,bat,Chennai Super Kings,35.3,26.1,0,23.6,0
+1254090,Sharjah Cricket Stadium,2021-10-03,bat,Royal Challengers Bangalore,37.9,29.8,0,27.3,0
+1254100,Dubai International Cricket Stadium,2021-09-27,bat,Sunrisers Hyderabad,35.5,29,0,19.5,0
+1304054,"Wankhede Stadium, Mumbai",2022-04-01,field,Kolkata Knight Riders,32,22.4,0,22.1,0
+1304095,"Maharashtra Cricket Association Stadium, Pune",2022-05-04,field,Royal Challengers Bangalore,38.6,21.1,0,17.9,0
+1359513,"Eden Gardens, Kolkata",2023-04-29,field,Gujarat Titans,34,24.3,5.3,26.3,1
+1359516,"Wankhede Stadium, Mumbai",2023-04-30,bat,Mumbai Indians,30.9,24.9,0,21.5,0
+1426293,"Wankhede Stadium, Mumbai",2024-05-06,field,Mumbai Indians,33,26,0,22.2,0
+1473506,"Sawai Mansingh Stadium, Jaipur",2025-05-26,field,Punjab Kings,38.9,25.3,0,14.1,0
+1527682,"Narendra Modi Stadium, Ahmedabad",2026-04-04,bat,Rajasthan Royals,33,24,0,11.7,0
+1527685,"Eden Gardens, Kolkata",2026-04-06,bat,null,32.9,22.7,9.3,11.6,1
+1529307,"Sawai Mansingh Stadium, Jaipur",2026-05-19,field,Rajasthan Royals,42.7,31.6,0,16.3,0
+336011,"Sawai Mansingh Stadium, Jaipur",2008-05-09,field,Rajasthan Royals,37.2,23.2,0.4,21.2,0
+336028,"Wankhede Stadium, Mumbai",2008-05-21,field,Kings XI Punjab,31.4,27.8,0.5,18.7,0
+501252,"Sawai Mansingh Stadium, Jaipur",2011-05-11,field,Royal Challengers Bangalore,41.1,28.1,0,21.8,0
+598029,"Eden Gardens, Kolkata",2013-04-24,bat,Mumbai Indians,33.1,23.1,2.4,10.6,1
+598037,"Wankhede Stadium, Mumbai",2013-04-29,bat,Mumbai Indians,33.2,25.9,0,20.3,0
+829741,"Narendra Modi Stadium, Ahmedabad",2015-04-21,field,null,41.5,26.3,0,12.1,0
+829791,"Eden Gardens, Kolkata",2015-05-09,bat,Kolkata Knight Riders,34.5,27.3,0,14.1,0
+980939,"Maharashtra Cricket Association Stadium, Pune",2016-04-24,field,Kolkata Knight Riders,35,20,0,19.4,0
+980989,"Eden Gardens, Kolkata",2016-05-14,bat,Kolkata Knight Riders,35.5,28.2,0,24.4,0
+1082614,"Wankhede Stadium, Mumbai",2017-04-22,field,Mumbai Indians,30.3,26.6,0,17.9,0
+1082615,"Maharashtra Cricket Association Stadium, Pune",2017-04-22,field,Rising Pune Supergiant,34.5,20.7,0,22.1,0
+1082631,"Eden Gardens, Kolkata",2017-05-03,field,Rising Pune Supergiant,34.9,25.9,0,16.7,0
+1136575,"Sawai Mansingh Stadium, Jaipur",2018-04-18,field,Kolkata Knight Riders,38.5,24.8,0,16.4,0
+1136597,"Wankhede Stadium, Mumbai",2018-05-06,field,Mumbai Indians,31.7,26.2,0,20.5,0
+1216501,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-07,bat,Kolkata Knight Riders,40.1,26,0,25.6,0
+1216511,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-06,bat,Mumbai Indians,38.6,26,0,23.5,0
+1216512,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-18,field,null,36.3,21.9,0,28.9,0
+1216515,Sharjah Cricket Stadium,2020-10-03,field,Delhi Capitals,33.4,25.2,0,21.6,0
+1216519,Dubai International Cricket Stadium,2020-10-05,field,Delhi Capitals,35.6,26.2,0,21.6,0
+1216522,Dubai International Cricket Stadium,2020-10-17,bat,Royal Challengers Bangalore,35.4,20.8,0,27.7,0
+1216535,Dubai International Cricket Stadium,2020-10-31,field,Mumbai Indians,31.9,20.9,0,21.3,0
+1254068,"Wankhede Stadium, Mumbai",2021-04-18,field,Delhi Capitals,33.6,25.6,0,22.8,0
+1254094,Dubai International Cricket Stadium,2021-10-07,field,Punjab Kings,37.9,24.6,0,22.5,0
+1254104,Dubai International Cricket Stadium,2021-09-19,bat,Chennai Super Kings,41.2,26.8,0,25.7,0
+1304060,"Maharashtra Cricket Association Stadium, Pune",2022-04-06,field,Kolkata Knight Riders,39.7,21.5,0,25.5,0
+1304108,"Wankhede Stadium, Mumbai",2022-05-15,bat,Gujarat Titans,32.5,28.5,0,19.5,0
+1304113,"Wankhede Stadium, Mumbai",2022-05-19,bat,Royal Challengers Bangalore,31.6,27.9,0,23.3,0
+1312200,"Narendra Modi Stadium, Ahmedabad",2022-05-29,bat,Gujarat Titans,40.6,28.2,0,22.1,0
+1422121,"Eden Gardens, Kolkata",2024-03-23,field,Kolkata Knight Riders,32.6,19.9,2.3,16.6,1
+1422138,"Wankhede Stadium, Mumbai",2024-04-07,field,Mumbai Indians,36.3,25.9,0,27.8,0
+1426280,"Eden Gardens, Kolkata",2024-04-26,field,Punjab Kings,40.1,27.5,0,19.5,0
+1426283,"Narendra Modi Stadium, Ahmedabad",2024-04-28,field,Royal Challengers Bengaluru,40.7,28.4,0,15.4,0
+1473465,"Sawai Mansingh Stadium, Jaipur",2025-04-13,field,Royal Challengers Bengaluru,37.1,22.4,0,17.1,0
+1473476,"Eden Gardens, Kolkata",2025-04-21,field,Gujarat Titans,35.6,28,0,17.3,0
+1473504,"Narendra Modi Stadium, Ahmedabad",2025-05-25,bat,Chennai Super Kings,42.3,29.7,0,11.9,0
+1527675,"Wankhede Stadium, Mumbai",2026-03-29,field,Mumbai Indians,30.6,25.3,0.3,17.1,0
+335987,"Sawai Mansingh Stadium, Jaipur",2008-04-21,bat,Rajasthan Royals,38.5,21.9,0,9.7,0
+419113,"Eden Gardens, Kolkata",2010-03-16,bat,Chennai Super Kings,35.1,22.3,3.8,12.7,1
+419143,"Sawai Mansingh Stadium, Jaipur",2010-04-07,bat,Rajasthan Royals,39.1,21.6,0,15.6,0
+501221,"Wankhede Stadium, Mumbai",2011-04-22,field,Mumbai Indians,30.1,24.3,0,19.6,0
+548317,"Wankhede Stadium, Mumbai",2012-04-11,field,Mumbai Indians,29.6,24,0,17.7,0
+548346,"Wankhede Stadium, Mumbai",2012-04-29,field,Mumbai Indians,29.2,24.1,0,19.5,0
+548353,"Eden Gardens, Kolkata",2012-05-05,bat,Kolkata Knight Riders,31.9,24.7,8.5,5.4,1
+598009,"Maharashtra Cricket Association Stadium, Pune",2013-04-11,bat,Pune Warriors,37.2,19.8,0,18.4,0
+829709,"Maharashtra Cricket Association Stadium, Pune",2015-04-10,field,Rajasthan Royals,34.3,22.4,0.7,13.7,1
+829725,"Maharashtra Cricket Association Stadium, Pune",2015-04-15,bat,Delhi Daredevils,32.3,18.8,0,16.2,0
+980931,"Maharashtra Cricket Association Stadium, Pune",2016-04-22,field,Royal Challengers Bangalore,33.8,21.8,0,22.7,0
+1136563,"Eden Gardens, Kolkata",2018-04-08,field,Kolkata Knight Riders,32.8,23.4,0,15,0
+1136578,"Eden Gardens, Kolkata",2018-04-21,field,Kings XI Punjab,35.4,27.5,0.1,24.7,0
+1136600,"Sawai Mansingh Stadium, Jaipur",2018-05-08,bat,Rajasthan Royals,36.1,25.6,1.3,25.3,1
+1216493,Dubai International Cricket Stadium,2020-09-20,field,null,37.5,26.4,0,23.1,0
+1216497,"Sheikh Zayed Stadium, Abu Dhabi",2020-10-24,field,Kolkata Knight Riders,36.8,22,0,24,0
+1216542,Dubai International Cricket Stadium,2020-10-08,bat,Sunrisers Hyderabad,35.5,25.3,0,23.7,0
+1237177,Dubai International Cricket Stadium,2020-11-05,field,Mumbai Indians,30.2,20.6,0,16.2,0
+1254065,"Wankhede Stadium, Mumbai",2021-04-16,field,Chennai Super Kings,31.6,24.4,0,26.4,0
+1254095,"Sheikh Zayed Stadium, Abu Dhabi",2021-10-06,field,Sunrisers Hyderabad,36.7,27.9,0,22.1,0
+1304064,"Maharashtra Cricket Association Stadium, Pune",2022-04-09,field,Royal Challengers Bangalore,40,21.7,0,24.3,0
+1304075,"Maharashtra Cricket Association Stadium, Pune",2022-04-17,field,Gujarat Titans,38.7,19.8,0,20.2,0
+1304085,"Maharashtra Cricket Association Stadium, Pune",2022-04-26,field,Rajasthan Royals,40.3,23.2,0,17.6,0
+1359511,"Sawai Mansingh Stadium, Jaipur",2023-04-27,bat,Rajasthan Royals,35.4,22.1,0,22,0
+1370353,"Narendra Modi Stadium, Ahmedabad",2023-05-29,field,Chennai Super Kings,36.4,24.5,0.5,22.3,0
+1473438,"Eden Gardens, Kolkata",2025-03-22,field,Royal Challengers Bengaluru,26.3,21.3,9.8,15,1
+1485779,"Sawai Mansingh Stadium, Jaipur",2025-05-24,field,Delhi Capitals,41,28.7,0,16.8,0
+1529309,"Narendra Modi Stadium, Ahmedabad",2026-05-21,field,Gujarat Titans,41.1,28.7,0,12.5,0
+419158,"Eden Gardens, Kolkata",2010-04-17,bat,Kolkata Knight Riders,36,27.2,0,25.3,0
+548308,"Wankhede Stadium, Mumbai",2012-04-06,field,Pune Warriors,29.8,23.1,0,17.3,0
+548320,"Eden Gardens, Kolkata",2012-04-13,bat,Kolkata Knight Riders,34.7,23.2,6,16.2,1
+548361,"Sawai Mansingh Stadium, Jaipur",2012-05-10,field,Chennai Super Kings,40,25.9,0.1,18.5,0
+598043,"Eden Gardens, Kolkata",2013-05-03,bat,Kolkata Knight Riders,38.2,27.9,0,23.9,0
+598046,"Wankhede Stadium, Mumbai",2013-05-05,bat,Mumbai Indians,31.4,25.6,0,19.3,0
+1082624,"Maharashtra Cricket Association Stadium, Pune",2017-04-29,field,Rising Pune Supergiant,36.9,20.9,0,21.7,0
+1136566,"Sawai Mansingh Stadium, Jaipur",2018-04-11,field,Rajasthan Royals,35.9,22.8,0.2,17,0
+1136569,"Wankhede Stadium, Mumbai",2018-04-14,field,Delhi Daredevils,30.9,24.7,0,23.7,0
+1136573,"Eden Gardens, Kolkata",2018-04-16,field,Kolkata Knight Riders,37.7,24.5,0.2,19.1,0
+1178418,"Eden Gardens, Kolkata",2019-04-25,field,Rajasthan Royals,35.9,25.9,0,15.8,0
+1216517,Dubai International Cricket Stadium,2020-10-18,bat,null,35.8,20.3,0,26.4,0
+1216538,Sharjah Cricket Stadium,2020-10-04,bat,Mumbai Indians,34.7,25.6,0,20.4,0
+1216545,"Sheikh Zayed Stadium, Abu Dhabi",2020-09-26,bat,Kolkata Knight Riders,40.1,26.4,0,23.9,0
+1304051,"Maharashtra Cricket Association Stadium, Pune",2022-03-29,field,Rajasthan Royals,39,19.9,0,18.5,0
+1304056,"Maharashtra Cricket Association Stadium, Pune",2022-04-02,field,Gujarat Titans,38.6,19.6,0,20.3,0
+1304086,"Wankhede Stadium, Mumbai",2022-04-27,field,Gujarat Titans,34.6,26.6,0,29.7,0
+1359531,"Wankhede Stadium, Mumbai",2023-05-12,field,Mumbai Indians,32.7,27.9,0,20.9,0
+1422132,"Wankhede Stadium, Mumbai",2024-04-01,field,Rajasthan Royals,33.5,24.7,0,22.6,0
+1422135,"Narendra Modi Stadium, Ahmedabad",2024-04-04,field,Punjab Kings,37.4,25.4,0,12.7,0
+1426297,"Narendra Modi Stadium, Ahmedabad",2024-05-10,field,Gujarat Titans,42,28.8,0,20.7,0
+1426309,"Narendra Modi Stadium, Ahmedabad",2024-05-21,bat,Kolkata Knight Riders,45.1,30.7,0,16.9,0
+1473449,"Wankhede Stadium, Mumbai",2025-03-31,field,Mumbai Indians,36.6,26,0,19.2,0
+1473493,"Wankhede Stadium, Mumbai",2025-05-06,field,Gujarat Titans,32.4,23.3,3.3,18.8,1
+1529273,"Narendra Modi Stadium, Ahmedabad",2026-04-20,field,Mumbai Indians,40,25.6,0,10.1,0
+1529286,"Sawai Mansingh Stadium, Jaipur",2026-05-01,bat,Delhi Capitals,39.7,23,0,16.1,0
+336000,"Sawai Mansingh Stadium, Jaipur",2008-05-01,bat,Rajasthan Royals,40.9,26,0,18.9,0
+336023,"Sawai Mansingh Stadium, Jaipur",2008-05-17,field,Rajasthan Royals,40.4,27.9,0,27,0
+336035,"Eden Gardens, Kolkata",2008-05-25,bat,Kolkata Knight Riders,33.1,25.6,20.9,9.7,1
+336036,"Sawai Mansingh Stadium, Jaipur",2008-05-26,field,Rajasthan Royals,37.9,24.2,0.6,15.8,1
+548309,"Sawai Mansingh Stadium, Jaipur",2012-04-06,field,Rajasthan Royals,38.2,22.6,0,13.8,0
+548349,"Sawai Mansingh Stadium, Jaipur",2012-05-01,bat,Delhi Daredevils,35.8,21.5,0,14.5,0
+548363,"Eden Gardens, Kolkata",2012-05-12,bat,Mumbai Indians,36.4,27.7,0.3,19.6,0
+598011,"Wankhede Stadium, Mumbai",2013-04-13,bat,Mumbai Indians,32,24.1,0,20.5,0
+598072,"Eden Gardens, Kolkata",2013-05-24,bat,Mumbai Indians,35.8,26.9,2,13.8,1
+598073,"Eden Gardens, Kolkata",2013-05-26,bat,Mumbai Indians,34.2,27.4,1.9,14.5,1
+729291,Sharjah Cricket Stadium,2014-04-20,field,Kings XI Punjab,33.4,23.7,0,28.8,0
+829713,"Eden Gardens, Kolkata",2015-04-11,field,Royal Challengers Bangalore,33.9,25.3,0.4,15.6,0
+829781,"Eden Gardens, Kolkata",2015-05-04,field,Kolkata Knight Riders,33.3,25.5,0,12.3,0
+829819,"Maharashtra Cricket Association Stadium, Pune",2015-05-20,bat,Royal Challengers Bangalore,37,22.4,0,18.9,0

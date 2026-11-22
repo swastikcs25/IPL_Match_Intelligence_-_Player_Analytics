@@ -1,0 +1,71 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v07_donut_toss_split",
+  "position": {
+    "x": 16,
+    "y": 212,
+    "z": 6,
+    "width": 492,
+    "height": 240,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "toss stat"
+                    }
+                  },
+                  "Property": "toss_decision"
+                }
+              },
+              "queryRef": "toss stat.toss_decision",
+              "nativeQueryRef": "toss_decision",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Toss Matches"
+                }
+              },
+              "queryRef": "_Measures.Total Toss Matches",
+              "nativeQueryRef": "Total Toss Matches"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Toss Decision Split (Bat vs Field)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

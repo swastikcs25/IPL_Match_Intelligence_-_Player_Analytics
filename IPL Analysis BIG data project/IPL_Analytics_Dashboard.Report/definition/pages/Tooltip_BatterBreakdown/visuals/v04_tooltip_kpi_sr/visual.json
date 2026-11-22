@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v04_tooltip_kpi_sr",
+  "position": {
+    "x": 198,
+    "y": 210,
+    "z": 3,
+    "width": 166,
+    "height": 60,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Weighted Strike Rate"
+                }
+              },
+              "queryRef": "_Measures.Weighted Strike Rate",
+              "nativeQueryRef": "Weighted Strike Rate"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Phase SR'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

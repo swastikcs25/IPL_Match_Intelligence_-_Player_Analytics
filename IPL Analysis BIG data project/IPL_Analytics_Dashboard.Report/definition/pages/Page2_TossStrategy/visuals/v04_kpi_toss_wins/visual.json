@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v04_kpi_toss_wins",
+  "position": {
+    "x": 16,
+    "y": 96,
+    "z": 3,
+    "width": 405,
+    "height": 100,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Toss Winner Match Wins"
+                }
+              },
+              "queryRef": "_Measures.Toss Winner Match Wins",
+              "nativeQueryRef": "Toss Winner Match Wins"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Tosses Won'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

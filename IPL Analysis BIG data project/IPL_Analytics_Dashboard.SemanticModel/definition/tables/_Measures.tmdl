@@ -1,0 +1,148 @@
+table _Measures
+	lineageTag: 50f41f8d-fb5d-45cf-99db-fe4af394d932
+
+	measure 'Total Matches Analyzed' = DISTINCTCOUNT('Gold weather impact'[match_id])
+		formatString: #,##0
+		displayFolder: Match & Toss KPIs
+		lineageTag: a3fd2f04-e93e-41e3-981d-2504b92a9223
+
+	measure 'Toss Winner Match Wins' = SUM('toss stat'[toss_winner_wins])
+		formatString: #,##0
+		displayFolder: Match & Toss KPIs
+		lineageTag: 4ea077c5-d492-4d1d-bdb8-319964ec6943
+
+	measure 'Total Toss Matches' = SUM('toss stat'[total_matches])
+		formatString: #,##0
+		displayFolder: Match & Toss KPIs
+		lineageTag: ce1cc07e-4a47-4706-aba1-f30a310df6dd
+
+	measure 'Overall Toss Win %' = DIVIDE(SUM('toss stat'[toss_winner_wins]), SUM('toss stat'[total_matches]), 0)
+		formatString: 0.0%
+		displayFolder: Match & Toss KPIs
+		lineageTag: aa1df9e4-156d-4275-a02d-afd95778a555
+
+	measure 'Bat First Win %' = DIVIDE(CALCULATE(SUM('toss stat'[toss_winner_wins]), 'toss stat'[toss_decision] = "bat"), CALCULATE(SUM('toss stat'[total_matches]), 'toss stat'[toss_decision] = "bat"), 0)
+		formatString: 0.0%
+		displayFolder: Match & Toss KPIs
+		lineageTag: ffd7cd1c-5461-4500-bba8-c4a21642f3a2
+
+	measure 'Field First Win %' = DIVIDE(CALCULATE(SUM('toss stat'[toss_winner_wins]), 'toss stat'[toss_decision] = "field"), CALCULATE(SUM('toss stat'[total_matches]), 'toss stat'[toss_decision] = "field"), 0)
+		formatString: 0.0%
+		displayFolder: Match & Toss KPIs
+		lineageTag: 253159e3-2f49-4be5-912b-5eb0d71d9bb1
+
+	measure 'Rain Affected Matches' = CALCULATE(COUNTROWS('Gold weather impact'), 'Gold weather impact'[is_rain_affected] = 1)
+		formatString: #,##0
+		displayFolder: Match & Toss KPIs
+		lineageTag: 26f3509f-4a07-4c8b-a597-0a2e99db8264
+
+	measure 'Clear Matches' = CALCULATE(COUNTROWS('Gold weather impact'), 'Gold weather impact'[is_rain_affected] = 0)
+		formatString: #,##0
+		displayFolder: Match & Toss KPIs
+		lineageTag: 91a61aaf-73ce-4dc3-894f-aebc221b1c04
+
+	measure 'Rain Impact %' = DIVIDE([Rain Affected Matches], [Total Matches Analyzed], 0)
+		formatString: 0.0%
+		displayFolder: Match & Toss KPIs
+		lineageTag: 401918fc-f701-43a4-841c-30e6a9240725
+
+	measure 'Total Venues' = DISTINCTCOUNT('gold venue stats'[venue])
+		formatString: #,##0
+		displayFolder: Venue & Weather KPIs
+		lineageTag: 84f50e28-53a2-4c49-a430-81eaee779f6f
+
+	measure 'Overall Avg Match Score' = AVERAGE('gold venue stats'[avg_score_per_match])
+		formatString: #,##0.0
+		displayFolder: Venue & Weather KPIs
+		lineageTag: 0d33f361-ef08-486c-8c1e-e7a89dc5f8f2
+
+	measure 'Highest Scoring Venue' = CALCULATE(MAX('gold venue stats'[avg_score_per_match]))
+		formatString: #,##0.0
+		displayFolder: Venue & Weather KPIs
+		lineageTag: 87f6a60b-6169-4700-90fb-27b565496580
+
+	measure 'Highest Scoring Venue Name' = CALCULATE(FIRSTNONBLANK('gold venue stats'[venue], 1), TOPN(1, ALL('gold venue stats'), 'gold venue stats'[avg_score_per_match], DESC))
+		displayFolder: Venue & Weather KPIs
+		lineageTag: c5f76c19-e788-4ead-9197-d2562a059a78
+
+	measure 'Avg Max Temp (°C)' = AVERAGE('Gold weather impact'[temp_max])
+		formatString: 0.0 "°C"
+		displayFolder: Venue & Weather KPIs
+		lineageTag: bfa8e11e-eed8-4577-85f1-69115c9b62f1
+
+	measure 'Avg Precipitation (mm)' = AVERAGE('Gold weather impact'[precipitation])
+		formatString: 0.00 "mm"
+		displayFolder: Venue & Weather KPIs
+		lineageTag: 5782dcca-0c8f-42a8-ae55-9b05e02770ca
+
+	measure 'Rain vs Clear Win Shift' =
+			VAR RainFieldRate = DIVIDE(CALCULATE(COUNTROWS('Gold weather impact'), 'Gold weather impact'[is_rain_affected] = 1, 'Gold weather impact'[toss_decision] = "field"), CALCULATE(COUNTROWS('Gold weather impact'), 'Gold weather impact'[is_rain_affected] = 1), 0)
+			VAR ClearFieldRate = DIVIDE(CALCULATE(COUNTROWS('Gold weather impact'), 'Gold weather impact'[is_rain_affected] = 0, 'Gold weather impact'[toss_decision] = "field"), CALCULATE(COUNTROWS('Gold weather impact'), 'Gold weather impact'[is_rain_affected] = 0), 0)
+			RETURN RainFieldRate - ClearFieldRate
+		formatString: +0.0%;-0.0%;0.0%
+		displayFolder: Venue & Weather KPIs
+		lineageTag: 21302fc0-9666-4a53-ab32-3373ba44a077
+
+	measure 'Total Runs' = SUM('Gold Player phase stats'[total_runs])
+		formatString: #,##0
+		displayFolder: Batting & Phase KPIs
+		lineageTag: 1465e19a-34c8-4889-97cb-6a3bf1d3380b
+
+	measure 'Total Balls Faced' = SUM('Gold Player phase stats'[balls_faced])
+		formatString: #,##0
+		displayFolder: Batting & Phase KPIs
+		lineageTag: d4f0df54-855f-470b-af75-d5a9468e603b
+
+	measure 'Total Boundaries' = SUM('Gold Player phase stats'[total_boundaries])
+		formatString: #,##0
+		displayFolder: Batting & Phase KPIs
+		lineageTag: 3445a698-3430-4cd9-9ebb-ff9c45af9370
+
+	measure 'Weighted Strike Rate' = DIVIDE(SUM('Gold Player phase stats'[total_runs]), SUM('Gold Player phase stats'[balls_faced]), 0) * 100
+		formatString: 0.00
+		displayFolder: Batting & Phase KPIs
+		lineageTag: c5928225-2358-4413-9798-b287daec26fc
+
+	measure 'Boundary Run %' = DIVIDE(SUM('Gold Player phase stats'[total_boundaries]) * 4, SUM('Gold Player phase stats'[total_runs]), 0)
+		formatString: 0.0%
+		displayFolder: Batting & Phase KPIs
+		lineageTag: 349fe900-dc39-4ade-847f-53794dbac48f
+
+	measure 'Powerplay SR' = CALCULATE([Weighted Strike Rate], 'Gold Player phase stats'[over_phase] = "Powerplay")
+		formatString: 0.00
+		displayFolder: Batting & Phase KPIs
+		lineageTag: c5e24e79-ca38-4ec7-98cf-c6d7ed91e159
+
+	measure 'Middle Overs SR' = CALCULATE([Weighted Strike Rate], 'Gold Player phase stats'[over_phase] = "Middle Overs")
+		formatString: 0.00
+		displayFolder: Batting & Phase KPIs
+		lineageTag: 35383bf0-c4e7-499d-a511-6c1590441ec0
+
+	measure 'Death Overs SR' = CALCULATE([Weighted Strike Rate], 'Gold Player phase stats'[over_phase] = "Death Overs")
+		formatString: 0.00
+		displayFolder: Batting & Phase KPIs
+		lineageTag: c24666ca-74a6-45cd-85c0-fb264283327a
+
+	measure 'Powerplay Runs' = CALCULATE(SUM('Gold Player phase stats'[total_runs]), 'Gold Player phase stats'[over_phase] = "Powerplay")
+		formatString: #,##0
+		displayFolder: Batting & Phase KPIs
+		lineageTag: 3e8be855-2d42-4ee1-af3f-55968e0abdc0
+
+	measure 'Middle Overs Runs' = CALCULATE(SUM('Gold Player phase stats'[total_runs]), 'Gold Player phase stats'[over_phase] = "Middle Overs")
+		formatString: #,##0
+		displayFolder: Batting & Phase KPIs
+		lineageTag: c2a463ea-5eff-4553-a7c9-b79564309ddb
+
+	measure 'Death Overs Runs' = CALCULATE(SUM('Gold Player phase stats'[total_runs]), 'Gold Player phase stats'[over_phase] = "Death Overs")
+		formatString: #,##0
+		displayFolder: Batting & Phase KPIs
+		lineageTag: d147d842-a1fd-43c8-8c14-53aac6722057
+
+	column Value
+		isHidden
+		isNameInferred
+		sourceColumn: [Value]
+
+	partition _Measures = calculated
+		mode: import
+		source = {"Dummy"}

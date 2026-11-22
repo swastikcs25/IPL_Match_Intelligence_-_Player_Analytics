@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v04_kpi_total_runs",
+  "position": {
+    "x": 16,
+    "y": 96,
+    "z": 3,
+    "width": 300,
+    "height": 100,
+    "tabOrder": 3
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Runs"
+                }
+              },
+              "queryRef": "_Measures.Total Runs",
+              "nativeQueryRef": "Total Runs"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Total Runs'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

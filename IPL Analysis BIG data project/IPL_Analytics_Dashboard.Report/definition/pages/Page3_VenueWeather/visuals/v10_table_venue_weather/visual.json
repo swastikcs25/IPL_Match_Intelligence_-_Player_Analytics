@@ -1,0 +1,125 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v10_table_venue_weather",
+  "position": {
+    "x": 16,
+    "y": 468,
+    "z": 9,
+    "width": 1248,
+    "height": 236,
+    "tabOrder": 9
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Dim_Venue"
+                    }
+                  },
+                  "Property": "venue"
+                }
+              },
+              "queryRef": "Dim_Venue.venue",
+              "nativeQueryRef": "venue",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold venue stats"
+                    }
+                  },
+                  "Property": "matches_hosted"
+                }
+              },
+              "queryRef": "gold venue stats.matches_hosted",
+              "nativeQueryRef": "matches_hosted",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "gold venue stats"
+                    }
+                  },
+                  "Property": "avg_score_per_match"
+                }
+              },
+              "queryRef": "gold venue stats.avg_score_per_match",
+              "nativeQueryRef": "avg_score_per_match",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Max Temp (\u00b0C)"
+                }
+              },
+              "queryRef": "_Measures.Avg Max Temp (\u00b0C)",
+              "nativeQueryRef": "Avg Max Temp (\u00b0C)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Avg Precipitation (mm)"
+                }
+              },
+              "queryRef": "_Measures.Avg Precipitation (mm)",
+              "nativeQueryRef": "Avg Precipitation (mm)"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Rain Affected Matches"
+                }
+              },
+              "queryRef": "_Measures.Rain Affected Matches",
+              "nativeQueryRef": "Rain Affected Matches"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Detailed Venue & Weather Data Summary'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

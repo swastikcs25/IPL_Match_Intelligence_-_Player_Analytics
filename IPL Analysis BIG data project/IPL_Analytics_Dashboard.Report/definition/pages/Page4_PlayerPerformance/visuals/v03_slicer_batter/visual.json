@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v03_slicer_batter",
+  "position": {
+    "x": 1040,
+    "y": 16,
+    "z": 2,
+    "width": 224,
+    "height": 64,
+    "tabOrder": 2
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "batter"
+                }
+              },
+              "queryRef": "Gold Player phase stats.batter",
+              "nativeQueryRef": "batter",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Search Batter'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

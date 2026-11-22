@@ -1,0 +1,90 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v09_stacked_phase_dist",
+  "position": {
+    "x": 710,
+    "y": 212,
+    "z": 8,
+    "width": 554,
+    "height": 240,
+    "tabOrder": 8
+  },
+  "visual": {
+    "visualType": "hundredPercentStackedBarChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "batter"
+                }
+              },
+              "queryRef": "Gold Player phase stats.batter",
+              "nativeQueryRef": "batter",
+              "active": true
+            }
+          ]
+        },
+        "Series": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "over_phase"
+                }
+              },
+              "queryRef": "Gold Player phase stats.over_phase",
+              "nativeQueryRef": "over_phase",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Runs"
+                }
+              },
+              "queryRef": "_Measures.Total Runs",
+              "nativeQueryRef": "Total Runs"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Run Distribution across Powerplay, Middle & Death Overs'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,11 @@
+table Dim_Toss_Decision
+	lineageTag: 1b4232d8-115a-4e99-bf47-96960524298f
+
+	column toss_decision
+		isNameInferred
+		sourceColumn: toss stat[toss_decision]
+		columnOrigin: 'toss stat'.toss_decision
+
+	partition Dim_Toss_Decision = calculated
+		mode: import
+		source = DISTINCT('toss stat'[toss_decision])

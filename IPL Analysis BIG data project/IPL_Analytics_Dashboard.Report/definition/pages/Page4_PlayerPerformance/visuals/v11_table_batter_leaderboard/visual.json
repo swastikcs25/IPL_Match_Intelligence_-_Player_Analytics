@@ -1,0 +1,125 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v11_table_batter_leaderboard",
+  "position": {
+    "x": 648,
+    "y": 468,
+    "z": 10,
+    "width": 616,
+    "height": 236,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "batter"
+                }
+              },
+              "queryRef": "Gold Player phase stats.batter",
+              "nativeQueryRef": "batter",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "over_phase"
+                }
+              },
+              "queryRef": "Gold Player phase stats.over_phase",
+              "nativeQueryRef": "over_phase",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Runs"
+                }
+              },
+              "queryRef": "_Measures.Total Runs",
+              "nativeQueryRef": "Total Runs"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "balls_faced"
+                }
+              },
+              "queryRef": "Gold Player phase stats.balls_faced",
+              "nativeQueryRef": "balls_faced",
+              "active": true
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Boundaries"
+                }
+              },
+              "queryRef": "_Measures.Total Boundaries",
+              "nativeQueryRef": "Total Boundaries"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Weighted Strike Rate"
+                }
+              },
+              "queryRef": "_Measures.Weighted Strike Rate",
+              "nativeQueryRef": "Weighted Strike Rate"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Interactive Batter Leaderboard & Phase Efficiency'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

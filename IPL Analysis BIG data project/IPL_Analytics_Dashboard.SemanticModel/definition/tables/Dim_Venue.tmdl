@@ -1,0 +1,12 @@
+table Dim_Venue
+	lineageTag: e6ae08c8-b271-418e-af49-a831c03139d2
+
+	column venue
+		dataCategory: Place
+		isNameInferred
+		sourceColumn: gold venue stats[venue]
+		columnOrigin: 'gold venue stats'.venue
+
+	partition Dim_Venue = calculated
+		mode: import
+		source = DISTINCT('gold venue stats'[venue])

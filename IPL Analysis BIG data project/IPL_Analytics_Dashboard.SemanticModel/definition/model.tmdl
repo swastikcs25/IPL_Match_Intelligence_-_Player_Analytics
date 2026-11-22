@@ -1,0 +1,15 @@
+model Model
+	culture: en-IN
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-IN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+	annotation __PBI_TimeIntelligenceEnabled = 1
+
+	annotation PBIDesktopVersion = 2.159.1231.0 (24.12)
+
+	annotation PBI_QueryOrder = ["Gold Player phase stats","gold venue stats","Gold weather impact","toss stat"]
+
+	annotation PBI_ProTooling = ["MCP-PBIModeling"]

@@ -1,0 +1,53 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v02_slicer_phase",
+  "position": {
+    "x": 792,
+    "y": 16,
+    "z": 1,
+    "width": 232,
+    "height": 64,
+    "tabOrder": 1
+  },
+  "visual": {
+    "visualType": "slicer",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "over_phase"
+                }
+              },
+              "queryRef": "Gold Player phase stats.over_phase",
+              "nativeQueryRef": "over_phase",
+              "active": true
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Over Phase'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

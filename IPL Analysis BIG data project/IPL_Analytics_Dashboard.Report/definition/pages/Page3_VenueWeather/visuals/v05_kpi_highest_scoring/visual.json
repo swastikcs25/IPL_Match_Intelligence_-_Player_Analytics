@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v05_kpi_highest_scoring",
+  "position": {
+    "x": 332,
+    "y": 96,
+    "z": 4,
+    "width": 300,
+    "height": 100,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Highest Scoring Venue"
+                }
+              },
+              "queryRef": "_Measures.Highest Scoring Venue",
+              "nativeQueryRef": "Highest Scoring Venue"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Highest Venue Avg Score'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

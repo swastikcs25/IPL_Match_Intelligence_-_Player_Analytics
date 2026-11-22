@@ -1,0 +1,20 @@
+relationship 9f93ae09-a7fb-4f7a-962d-48f484fc914e
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Gold weather impact'.match_date
+	toColumn: LocalDateTable_f79414b4-2a98-4eae-98f6-bdade8f796d9.Date
+
+relationship Rel_Weather_DimVenue
+	fromColumn: 'Gold weather impact'.venue
+	toColumn: Dim_Venue.venue
+
+relationship Rel_VenueStats_DimVenue
+	fromColumn: 'gold venue stats'.venue
+	toColumn: Dim_Venue.venue
+
+relationship Rel_Weather_DimToss
+	fromColumn: 'Gold weather impact'.toss_decision
+	toColumn: Dim_Toss_Decision.toss_decision
+
+relationship Rel_TossStat_DimToss
+	fromColumn: 'toss stat'.toss_decision
+	toColumn: Dim_Toss_Decision.toss_decision

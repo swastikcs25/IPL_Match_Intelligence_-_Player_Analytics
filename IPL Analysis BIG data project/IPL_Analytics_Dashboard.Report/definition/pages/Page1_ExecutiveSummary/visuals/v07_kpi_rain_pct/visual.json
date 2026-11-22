@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v07_kpi_rain_pct",
+  "position": {
+    "x": 964,
+    "y": 96,
+    "z": 6,
+    "width": 300,
+    "height": 100,
+    "tabOrder": 6
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Rain Impact %"
+                }
+              },
+              "queryRef": "_Measures.Rain Impact %",
+              "nativeQueryRef": "Rain Impact %"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Rain-Affected Matches (%)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

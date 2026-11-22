@@ -1,0 +1,52 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v05_kpi_bat_win_pct",
+  "position": {
+    "x": 437,
+    "y": 96,
+    "z": 4,
+    "width": 405,
+    "height": 100,
+    "tabOrder": 4
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Bat First Win %"
+                }
+              },
+              "queryRef": "_Measures.Bat First Win %",
+              "nativeQueryRef": "Bat First Win %"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bat First Win %'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

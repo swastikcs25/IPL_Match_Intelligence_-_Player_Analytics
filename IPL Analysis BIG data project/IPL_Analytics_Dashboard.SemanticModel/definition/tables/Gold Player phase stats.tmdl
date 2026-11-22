@@ -1,0 +1,68 @@
+table 'Gold Player phase stats'
+	lineageTag: 8464a4f2-7887-4b6b-adf8-3303d4e92672
+
+	column batter
+		dataType: string
+		lineageTag: a993164a-0a80-4b61-b323-391017cc055a
+		summarizeBy: none
+		sourceColumn: batter
+
+		annotation SummarizationSetBy = Automatic
+
+	column over_phase
+		dataType: string
+		lineageTag: af0e920a-cb6b-438e-9f47-2f1e15dc4f0a
+		summarizeBy: none
+		sourceColumn: over_phase
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_runs
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 2198c283-932f-440f-a0c8-8ff652a6f9fa
+		summarizeBy: sum
+		sourceColumn: total_runs
+
+		annotation SummarizationSetBy = Automatic
+
+	column balls_faced
+		dataType: int64
+		formatString: #,##0
+		lineageTag: b878a8c3-514a-4333-96f4-060ca6291f3e
+		summarizeBy: sum
+		sourceColumn: balls_faced
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_boundaries
+		dataType: int64
+		formatString: #,##0
+		lineageTag: e53c8388-ba86-4431-9b70-f89dcf80e696
+		summarizeBy: sum
+		sourceColumn: total_boundaries
+
+		annotation SummarizationSetBy = Automatic
+
+	column strike_rate
+		dataType: double
+		formatString: 0.0
+		lineageTag: af708835-e5f0-4b80-acea-fbd95ae29db1
+		summarizeBy: sum
+		sourceColumn: strike_rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'Gold Player phase stats' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\swast\Documents\IPL Analysis BIG data project\Gold Player phase stats.csv"),[Delimiter=",", Columns=6, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"batter", type text}, {"over_phase", type text}, {"total_runs", Int64.Type}, {"balls_faced", Int64.Type}, {"total_boundaries", Int64.Type}, {"strike_rate", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

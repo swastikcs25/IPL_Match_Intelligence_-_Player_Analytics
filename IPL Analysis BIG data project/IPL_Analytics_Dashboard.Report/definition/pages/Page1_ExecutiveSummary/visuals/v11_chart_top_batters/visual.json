@@ -1,0 +1,89 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.4.0/schema.json",
+  "name": "v11_chart_top_batters",
+  "position": {
+    "x": 648,
+    "y": 468,
+    "z": 10,
+    "width": 616,
+    "height": 236,
+    "tabOrder": 10
+  },
+  "visual": {
+    "visualType": "barChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Gold Player phase stats"
+                    }
+                  },
+                  "Property": "batter"
+                }
+              },
+              "queryRef": "Gold Player phase stats.batter",
+              "nativeQueryRef": "batter",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Total Runs"
+                }
+              },
+              "queryRef": "_Measures.Total Runs",
+              "nativeQueryRef": "Total Runs"
+            }
+          ]
+        },
+        "Tooltips": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "_Measures"
+                    }
+                  },
+                  "Property": "Weighted Strike Rate"
+                }
+              },
+              "queryRef": "_Measures.Weighted Strike Rate",
+              "nativeQueryRef": "Weighted Strike Rate"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "title": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top Batters by Total Runs (Hover for Strike Rate)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

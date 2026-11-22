@@ -1,0 +1,50 @@
+table 'toss stat'
+	lineageTag: fd25ab0d-f7d6-4205-83f2-9ea6d06b311a
+
+	column toss_decision
+		dataType: string
+		lineageTag: 13ae4588-218a-423b-a99c-a87e59627cb2
+		summarizeBy: none
+		sourceColumn: toss_decision
+
+		annotation SummarizationSetBy = Automatic
+
+	column total_matches
+		dataType: int64
+		formatString: 0
+		lineageTag: 40a64337-da74-4c13-b571-70eaf42afaa7
+		summarizeBy: none
+		sourceColumn: total_matches
+
+		annotation SummarizationSetBy = Automatic
+
+	column toss_winner_wins
+		dataType: int64
+		formatString: 0
+		lineageTag: 3cb33ba2-c3e2-4c0d-8a9b-ff292021f35d
+		summarizeBy: none
+		sourceColumn: toss_winner_wins
+
+		annotation SummarizationSetBy = Automatic
+
+	column win_percentage
+		dataType: double
+		lineageTag: f6e90a74-f3c3-4e63-a189-d3f7062f9df5
+		summarizeBy: none
+		sourceColumn: win_percentage
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'toss stat' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\swast\Documents\IPL Analysis BIG data project\toss stat.csv"),[Delimiter=",", Columns=4, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"toss_decision", type text}, {"total_matches", Int64.Type}, {"toss_winner_wins", Int64.Type}, {"win_percentage", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

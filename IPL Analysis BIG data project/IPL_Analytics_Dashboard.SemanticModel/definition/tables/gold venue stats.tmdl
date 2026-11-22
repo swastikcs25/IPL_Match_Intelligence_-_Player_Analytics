@@ -1,0 +1,43 @@
+table 'gold venue stats'
+	lineageTag: 7e5b9910-776d-45e9-8c05-fc4cbf920d36
+
+	column venue
+		dataType: string
+		lineageTag: 43d13eba-ea0d-456b-807e-3071116b73f6
+		summarizeBy: none
+		sourceColumn: venue
+
+		annotation SummarizationSetBy = Automatic
+
+	column matches_hosted
+		dataType: int64
+		formatString: #,##0
+		lineageTag: 05e6bd33-8331-4189-b0d4-71678e4fefdc
+		summarizeBy: none
+		sourceColumn: matches_hosted
+
+		annotation SummarizationSetBy = Automatic
+
+	column avg_score_per_match
+		dataType: double
+		formatString: #,##0.0
+		lineageTag: fde77d2f-db73-4e88-8e0f-646b1a1832bf
+		dataCategory: Place
+		summarizeBy: none
+		sourceColumn: avg_score_per_match
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition 'gold venue stats' = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\swast\Documents\IPL Analysis BIG data project\gold venue stats.csv"),[Delimiter=",", Columns=3, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"venue", type text}, {"matches_hosted", Int64.Type}, {"avg_score_per_match", type number}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table

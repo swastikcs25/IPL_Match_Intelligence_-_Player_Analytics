@@ -1,0 +1,420 @@
+{
+  "config": "{\"version\": \"5.57\", \"themeCollection\": {\"customTheme\": {\"name\": \"IPL_Dark_Analytics\", \"reportVersionAtImport\": \"5.57\", \"type\": \"RegisteredResources\"}}, \"activeSectionIndex\": 0, \"defaultDrillFilterOtherVisuals\": true, \"settings\": {\"useNewFilterPaneExperience\": true, \"allowChangeFilterTypes\": true, \"useStylableVisualContainerHeader\": true}}",
+  "layoutOptimization": 0,
+  "theme": "IPL_Dark_Analytics",
+  "sections": [
+    {
+      "name": "Section_ExecutiveSummary",
+      "displayName": "Executive Summary",
+      "filters": "[]",
+      "ordinal": 0,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 16.0,
+          "z": 0,
+          "width": 760.0,
+          "height": 64.0,
+          "config": "{\"name\": \"72d91dc576b746de940e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 16.0, \"z\": 0, \"width\": 760.0, \"height\": 64.0, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"IPL EXECUTIVE SUMMARY | MATCH INTELLIGENCE\\n\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"15pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\"}}, {\"value\": \"Databricks Gold Layer Analytics | Tournament Performance, Toss Decisions & Venue Scoring\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 792.0,
+          "y": 16.0,
+          "z": 1,
+          "width": 232.0,
+          "height": 64.0,
+          "config": "{\"name\": \"be578d93f3e34cec8e66\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 792.0, \"y\": 16.0, \"z\": 1, \"width\": 232.0, \"height\": 64.0, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Venue.venue\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter by Venue'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040.0,
+          "y": 16.0,
+          "z": 2,
+          "width": 224.0,
+          "height": 64.0,
+          "config": "{\"name\": \"ae66704199164657b8f3\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040.0, \"y\": 16.0, \"z\": 2, \"width\": 224.0, \"height\": 64.0, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Toss_Decision.toss_decision\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Toss_Decision\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"toss_decision\"}, \"Name\": \"Dim_Toss_Decision.toss_decision\", \"NativeReferenceName\": \"toss_decision\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter Toss Decision'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 96.0,
+          "z": 3,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"b3d90fae020d4f59873b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 96.0, \"z\": 3, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Total Matches Analyzed\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Total Matches Analyzed\"}, \"Name\": \"_Measures.Total Matches Analyzed\", \"NativeReferenceName\": \"Total Matches Analyzed\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Matches Analyzed'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 332.0,
+          "y": 96.0,
+          "z": 4,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"c252cd17fb2b4368a3ae\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 332.0, \"y\": 96.0, \"z\": 4, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Overall Toss Win %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Overall Toss Win %\"}, \"Name\": \"_Measures.Overall Toss Win %\", \"NativeReferenceName\": \"Overall Toss Win %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Overall Toss Win %'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 96.0,
+          "z": 5,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"61b5efd827fd4c928460\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648.0, \"y\": 96.0, \"z\": 5, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Overall Avg Match Score\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Overall Avg Match Score\"}, \"Name\": \"_Measures.Overall Avg Match Score\", \"NativeReferenceName\": \"Overall Avg Match Score\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Overall Avg Match Score'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 964.0,
+          "y": 96.0,
+          "z": 6,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"d0d90802c42f47b8bc4a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 964.0, \"y\": 96.0, \"z\": 6, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Rain Impact %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Rain Impact %\"}, \"Name\": \"_Measures.Rain Impact %\", \"NativeReferenceName\": \"Rain Impact %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Rain-Affected Matches (%)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 212.0,
+          "z": 7,
+          "width": 616.0,
+          "height": 240.0,
+          "config": "{\"name\": \"79803368e998481195ad\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 212.0, \"z\": 7, \"width\": 616.0, \"height\": 240.0, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"toss stat.toss_decision\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Overall Toss Win %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"toss stat\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"toss_decision\"}, \"Name\": \"toss stat.toss_decision\", \"NativeReferenceName\": \"toss_decision\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Overall Toss Win %\"}, \"Name\": \"_Measures.Overall Toss Win %\", \"NativeReferenceName\": \"Overall Toss Win %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Bat vs. Field Toss Win %'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 212.0,
+          "z": 8,
+          "width": 616.0,
+          "height": 240.0,
+          "config": "{\"name\": \"7def64221cec49198df6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648.0, \"y\": 212.0, \"z\": 8, \"width\": 616.0, \"height\": 240.0, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"gold venue stats.venue\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Overall Avg Match Score\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"gold venue stats\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"gold venue stats.venue\", \"NativeReferenceName\": \"venue\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Overall Avg Match Score\"}, \"Name\": \"_Measures.Overall Avg Match Score\", \"NativeReferenceName\": \"Overall Avg Match Score\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Top 10 High-Scoring Venues (Avg Match Score)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 468.0,
+          "z": 9,
+          "width": 616.0,
+          "height": 236.0,
+          "config": "{\"name\": \"7d383281e5574a3688ad\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 468.0, \"z\": 9, \"width\": 616.0, \"height\": 236.0, \"tabOrder\": 9}}], \"singleVisual\": {\"visualType\": \"stackedBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Dim_Venue.venue\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Clear Matches\"}, {\"queryRef\": \"_Measures.Rain Affected Matches\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Clear Matches\"}, \"Name\": \"_Measures.Clear Matches\", \"NativeReferenceName\": \"Clear Matches\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Rain Affected Matches\"}, \"Name\": \"_Measures.Rain Affected Matches\", \"NativeReferenceName\": \"Rain Affected Matches\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Rain-Affected vs. Clear Matches by Venue'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 468.0,
+          "z": 10,
+          "width": 616.0,
+          "height": 236.0,
+          "config": "{\"name\": \"86a84032a671456c8a37\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648.0, \"y\": 468.0, \"z\": 10, \"width\": 616.0, \"height\": 236.0, \"tabOrder\": 10}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Gold Player phase stats.batter\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Runs\"}], \"Tooltips\": [{\"queryRef\": \"_Measures.Weighted Strike Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"batter\"}, \"Name\": \"Gold Player phase stats.batter\", \"NativeReferenceName\": \"batter\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Runs\"}, \"Name\": \"_Measures.Total Runs\", \"NativeReferenceName\": \"Total Runs\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Weighted Strike Rate\"}, \"Name\": \"_Measures.Weighted Strike Rate\", \"NativeReferenceName\": \"Weighted Strike Rate\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Top Batters by Total Runs (Hover for Strike Rate)'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Section_TossStrategy",
+      "displayName": "Toss Strategy & Outcomes",
+      "filters": "[]",
+      "ordinal": 1,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 16.0,
+          "z": 0,
+          "width": 760.0,
+          "height": 64.0,
+          "config": "{\"name\": \"090dac8439c046e49f9b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 16.0, \"z\": 0, \"width\": 760.0, \"height\": 64.0, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"TOSS STRATEGY & MATCH OUTCOMES\\n\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"15pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\"}}, {\"value\": \"Win Conversion by Decision | Comparative Analysis of Batting First vs. Fielding First\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 792.0,
+          "y": 16.0,
+          "z": 1,
+          "width": 232.0,
+          "height": 64.0,
+          "config": "{\"name\": \"eacaa79cf9a34ef2a387\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 792.0, \"y\": 16.0, \"z\": 1, \"width\": 232.0, \"height\": 64.0, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Venue.venue\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter by Venue'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040.0,
+          "y": 16.0,
+          "z": 2,
+          "width": 224.0,
+          "height": 64.0,
+          "config": "{\"name\": \"c5383509e9a7447381c0\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040.0, \"y\": 16.0, \"z\": 2, \"width\": 224.0, \"height\": 64.0, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Toss_Decision.toss_decision\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Toss_Decision\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"toss_decision\"}, \"Name\": \"Dim_Toss_Decision.toss_decision\", \"NativeReferenceName\": \"toss_decision\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter Toss Decision'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 96.0,
+          "z": 3,
+          "width": 405.0,
+          "height": 100.0,
+          "config": "{\"name\": \"552ad9f2397d4b14a8c7\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 96.0, \"z\": 3, \"width\": 405.0, \"height\": 100.0, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Toss Winner Match Wins\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Toss Winner Match Wins\"}, \"Name\": \"_Measures.Toss Winner Match Wins\", \"NativeReferenceName\": \"Toss Winner Match Wins\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Tosses Won'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 437.0,
+          "y": 96.0,
+          "z": 4,
+          "width": 405.0,
+          "height": 100.0,
+          "config": "{\"name\": \"ec128b328f664f63a004\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 437.0, \"y\": 96.0, \"z\": 4, \"width\": 405.0, \"height\": 100.0, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Bat First Win %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Bat First Win %\"}, \"Name\": \"_Measures.Bat First Win %\", \"NativeReferenceName\": \"Bat First Win %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Bat First Win %'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 858.0,
+          "y": 96.0,
+          "z": 5,
+          "width": 406.0,
+          "height": 100.0,
+          "config": "{\"name\": \"1a016ec5d5314ff087fb\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 858.0, \"y\": 96.0, \"z\": 5, \"width\": 406.0, \"height\": 100.0, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Field First Win %\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Field First Win %\"}, \"Name\": \"_Measures.Field First Win %\", \"NativeReferenceName\": \"Field First Win %\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Field First Win %'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 212.0,
+          "z": 6,
+          "width": 492.0,
+          "height": 240.0,
+          "config": "{\"name\": \"4ffe5cc0af1a4aef9a50\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 212.0, \"z\": 6, \"width\": 492.0, \"height\": 240.0, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"donutChart\", \"projections\": {\"Category\": [{\"queryRef\": \"toss stat.toss_decision\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Toss Matches\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"toss stat\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"toss_decision\"}, \"Name\": \"toss stat.toss_decision\", \"NativeReferenceName\": \"toss_decision\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Toss Matches\"}, \"Name\": \"_Measures.Total Toss Matches\", \"NativeReferenceName\": \"Total Toss Matches\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Toss Decision Split (Bat vs Field)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 524.0,
+          "y": 212.0,
+          "z": 7,
+          "width": 740.0,
+          "height": 240.0,
+          "config": "{\"name\": \"b3189946241d4062ac54\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 524.0, \"y\": 212.0, \"z\": 7, \"width\": 740.0, \"height\": 240.0, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"toss stat.toss_decision\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Toss Matches\"}, {\"queryRef\": \"_Measures.Toss Winner Match Wins\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"toss stat\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"toss_decision\"}, \"Name\": \"toss stat.toss_decision\", \"NativeReferenceName\": \"toss_decision\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Toss Matches\"}, \"Name\": \"_Measures.Total Toss Matches\", \"NativeReferenceName\": \"Total Toss Matches\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Toss Winner Match Wins\"}, \"Name\": \"_Measures.Toss Winner Match Wins\", \"NativeReferenceName\": \"Toss Winner Match Wins\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Matches vs Toss Winner Wins by Toss Decision'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 468.0,
+          "z": 8,
+          "width": 1248.0,
+          "height": 236.0,
+          "config": "{\"name\": \"87ff79d5fa8f43d48a2c\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 468.0, \"z\": 8, \"width\": 1248.0, \"height\": 236.0, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Venue.venue\"}, {\"queryRef\": \"Gold weather impact.toss_decision\"}, {\"queryRef\": \"_Measures.Total Matches Analyzed\"}, {\"queryRef\": \"_Measures.Toss Winner Match Wins\"}, {\"queryRef\": \"_Measures.Rain Affected Matches\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"Gold weather impact\", \"Type\": 0}, {\"Name\": \"t_2\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"toss_decision\"}, \"Name\": \"Gold weather impact.toss_decision\", \"NativeReferenceName\": \"toss_decision\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_2\"}}, \"Property\": \"Total Matches Analyzed\"}, \"Name\": \"_Measures.Total Matches Analyzed\", \"NativeReferenceName\": \"Total Matches Analyzed\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_2\"}}, \"Property\": \"Toss Winner Match Wins\"}, \"Name\": \"_Measures.Toss Winner Match Wins\", \"NativeReferenceName\": \"Toss Winner Match Wins\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_2\"}}, \"Property\": \"Rain Affected Matches\"}, \"Name\": \"_Measures.Rain Affected Matches\", \"NativeReferenceName\": \"Rain Affected Matches\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Venue-Level Toss Decision Breakdown & Match Outcomes'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Section_VenueWeather",
+      "displayName": "Venue & Weather Intel",
+      "filters": "[]",
+      "ordinal": 2,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 16.0,
+          "z": 0,
+          "width": 760.0,
+          "height": 64.0,
+          "config": "{\"name\": \"9d4f623dc073478eac92\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 16.0, \"z\": 0, \"width\": 760.0, \"height\": 64.0, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"VENUE & WEATHER INTELLIGENCE\\n\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"15pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\"}}, {\"value\": \"Environmental Conditions | Temperature, Thermal Dynamics, Precipitation & Scoring Patterns\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 792.0,
+          "y": 16.0,
+          "z": 1,
+          "width": 232.0,
+          "height": 64.0,
+          "config": "{\"name\": \"1bb5a830f9fe4441b26e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 792.0, \"y\": 16.0, \"z\": 1, \"width\": 232.0, \"height\": 64.0, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Venue.venue\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Filter by Venue'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040.0,
+          "y": 16.0,
+          "z": 2,
+          "width": 224.0,
+          "height": 64.0,
+          "config": "{\"name\": \"8e50dcc94c5f4bff87f8\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040.0, \"y\": 16.0, \"z\": 2, \"width\": 224.0, \"height\": 64.0, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Gold weather impact.is_rain_affected\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold weather impact\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"is_rain_affected\"}, \"Name\": \"Gold weather impact.is_rain_affected\", \"NativeReferenceName\": \"is_rain_affected\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Rain Affected (0/1)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 96.0,
+          "z": 3,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"9fbbd02c12ea4ad9ad24\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 96.0, \"z\": 3, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Total Venues\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Total Venues\"}, \"Name\": \"_Measures.Total Venues\", \"NativeReferenceName\": \"Total Venues\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Venues'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 332.0,
+          "y": 96.0,
+          "z": 4,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"f6d52cd4b39044e28e55\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 332.0, \"y\": 96.0, \"z\": 4, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Highest Scoring Venue\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Highest Scoring Venue\"}, \"Name\": \"_Measures.Highest Scoring Venue\", \"NativeReferenceName\": \"Highest Scoring Venue\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Highest Venue Avg Score'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 96.0,
+          "z": 5,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"4e758e5bfa53486b887e\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648.0, \"y\": 96.0, \"z\": 5, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Avg Max Temp (\\u00b0C)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Avg Max Temp (\\u00b0C)\"}, \"Name\": \"_Measures.Avg Max Temp (\\u00b0C)\", \"NativeReferenceName\": \"Avg Max Temp (\\u00b0C)\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Avg Max Temp (\\u00b0C)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 964.0,
+          "y": 96.0,
+          "z": 6,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"2733d24cbef642e39dfe\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 964.0, \"y\": 96.0, \"z\": 6, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Rain Affected Matches\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Rain Affected Matches\"}, \"Name\": \"_Measures.Rain Affected Matches\", \"NativeReferenceName\": \"Rain Affected Matches\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Rain-Affected Games'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 212.0,
+          "z": 7,
+          "width": 678.0,
+          "height": 240.0,
+          "config": "{\"name\": \"3d7c687e3e7b4b74bf9a\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 212.0, \"z\": 7, \"width\": 678.0, \"height\": 240.0, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"scatterChart\", \"projections\": {\"Category\": [{\"queryRef\": \"gold venue stats.venue\", \"active\": true}], \"X\": [{\"queryRef\": \"gold venue stats.matches_hosted\"}], \"Y\": [{\"queryRef\": \"gold venue stats.avg_score_per_match\"}], \"Size\": [{\"queryRef\": \"gold venue stats.matches_hosted\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"gold venue stats\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"gold venue stats.venue\", \"NativeReferenceName\": \"venue\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"matches_hosted\"}, \"Name\": \"gold venue stats.matches_hosted\", \"NativeReferenceName\": \"matches_hosted\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"avg_score_per_match\"}, \"Name\": \"gold venue stats.avg_score_per_match\", \"NativeReferenceName\": \"avg_score_per_match\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Matches Hosted vs Avg Score per Match (Sized by Venue Volume)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 710.0,
+          "y": 212.0,
+          "z": 8,
+          "width": 554.0,
+          "height": 240.0,
+          "config": "{\"name\": \"63e3c2f3bb934fa6bfe6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 710.0, \"y\": 212.0, \"z\": 8, \"width\": 554.0, \"height\": 240.0, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"lineClusteredColumnComboChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Dim_Venue.venue\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Avg Max Temp (\\u00b0C)\"}], \"Y2\": [{\"queryRef\": \"_Measures.Avg Precipitation (mm)\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Avg Max Temp (\\u00b0C)\"}, \"Name\": \"_Measures.Avg Max Temp (\\u00b0C)\", \"NativeReferenceName\": \"Avg Max Temp (\\u00b0C)\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Avg Precipitation (mm)\"}, \"Name\": \"_Measures.Avg Precipitation (mm)\", \"NativeReferenceName\": \"Avg Precipitation (mm)\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Avg Max Temperature (\\u00b0C) & Precipitation (mm) across Venues'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 468.0,
+          "z": 9,
+          "width": 1248.0,
+          "height": 236.0,
+          "config": "{\"name\": \"66284d1d0a604b399d81\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 468.0, \"z\": 9, \"width\": 1248.0, \"height\": 236.0, \"tabOrder\": 9}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Dim_Venue.venue\"}, {\"queryRef\": \"gold venue stats.matches_hosted\"}, {\"queryRef\": \"gold venue stats.avg_score_per_match\"}, {\"queryRef\": \"_Measures.Avg Max Temp (\\u00b0C)\"}, {\"queryRef\": \"_Measures.Avg Precipitation (mm)\"}, {\"queryRef\": \"_Measures.Rain Affected Matches\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Dim_Venue\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"gold venue stats\", \"Type\": 0}, {\"Name\": \"t_2\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"venue\"}, \"Name\": \"Dim_Venue.venue\", \"NativeReferenceName\": \"venue\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"matches_hosted\"}, \"Name\": \"gold venue stats.matches_hosted\", \"NativeReferenceName\": \"matches_hosted\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"avg_score_per_match\"}, \"Name\": \"gold venue stats.avg_score_per_match\", \"NativeReferenceName\": \"avg_score_per_match\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_2\"}}, \"Property\": \"Avg Max Temp (\\u00b0C)\"}, \"Name\": \"_Measures.Avg Max Temp (\\u00b0C)\", \"NativeReferenceName\": \"Avg Max Temp (\\u00b0C)\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_2\"}}, \"Property\": \"Avg Precipitation (mm)\"}, \"Name\": \"_Measures.Avg Precipitation (mm)\", \"NativeReferenceName\": \"Avg Precipitation (mm)\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_2\"}}, \"Property\": \"Rain Affected Matches\"}, \"Name\": \"_Measures.Rain Affected Matches\", \"NativeReferenceName\": \"Rain Affected Matches\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Detailed Venue & Weather Data Summary'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    },
+    {
+      "name": "Section_PlayerPerformance",
+      "displayName": "Player & Phase Analytics",
+      "filters": "[]",
+      "ordinal": 3,
+      "width": 1280.0,
+      "height": 720.0,
+      "config": "{}",
+      "visualContainers": [
+        {
+          "x": 16.0,
+          "y": 16.0,
+          "z": 0,
+          "width": 760.0,
+          "height": 64.0,
+          "config": "{\"name\": \"34d146728ae94d77ad08\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 16.0, \"z\": 0, \"width\": 760.0, \"height\": 64.0, \"tabOrder\": 0}}], \"singleVisual\": {\"visualType\": \"textbox\", \"objects\": {\"general\": [{\"properties\": {\"paragraphs\": [{\"textRuns\": [{\"value\": \"PLAYER PERFORMANCE & PHASE ANALYTICS\\n\", \"textStyle\": {\"fontFamily\": \"Segoe UI Semibold\", \"fontSize\": \"15pt\", \"fontWeight\": \"bold\", \"color\": \"#FFFFFF\"}}, {\"value\": \"Over Phase Breakdown (Powerplay, Middle, Death Overs) | Batting Strike Rates & Boundary Efficiency\", \"textStyle\": {\"fontFamily\": \"Segoe UI\", \"fontSize\": \"9pt\", \"color\": \"#CBD5E1\"}}]}]}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 792.0,
+          "y": 16.0,
+          "z": 1,
+          "width": 232.0,
+          "height": 64.0,
+          "config": "{\"name\": \"f5dda58513854289bef5\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 792.0, \"y\": 16.0, \"z\": 1, \"width\": 232.0, \"height\": 64.0, \"tabOrder\": 1}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Gold Player phase stats.over_phase\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"over_phase\"}, \"Name\": \"Gold Player phase stats.over_phase\", \"NativeReferenceName\": \"over_phase\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Over Phase'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 1040.0,
+          "y": 16.0,
+          "z": 2,
+          "width": 224.0,
+          "height": 64.0,
+          "config": "{\"name\": \"8880c84278c84738911c\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 1040.0, \"y\": 16.0, \"z\": 2, \"width\": 224.0, \"height\": 64.0, \"tabOrder\": 2}}], \"singleVisual\": {\"visualType\": \"slicer\", \"projections\": {\"Values\": [{\"queryRef\": \"Gold Player phase stats.batter\", \"active\": true}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"batter\"}, \"Name\": \"Gold Player phase stats.batter\", \"NativeReferenceName\": \"batter\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Search Batter'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 96.0,
+          "z": 3,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"428f40acd037407c9061\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 96.0, \"z\": 3, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 3}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Total Runs\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Total Runs\"}, \"Name\": \"_Measures.Total Runs\", \"NativeReferenceName\": \"Total Runs\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Runs'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 332.0,
+          "y": 96.0,
+          "z": 4,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"f28f7dd21b504d0d88be\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 332.0, \"y\": 96.0, \"z\": 4, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 4}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Weighted Strike Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Weighted Strike Rate\"}, \"Name\": \"_Measures.Weighted Strike Rate\", \"NativeReferenceName\": \"Weighted Strike Rate\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Weighted Strike Rate'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 96.0,
+          "z": 5,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"62560d836ced42609414\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648.0, \"y\": 96.0, \"z\": 5, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 5}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Total Boundaries\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Total Boundaries\"}, \"Name\": \"_Measures.Total Boundaries\", \"NativeReferenceName\": \"Total Boundaries\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Total Boundaries'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 964.0,
+          "y": 96.0,
+          "z": 6,
+          "width": 300.0,
+          "height": 100.0,
+          "config": "{\"name\": \"9d305e007e1c4e2697e6\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 964.0, \"y\": 96.0, \"z\": 6, \"width\": 300.0, \"height\": 100.0, \"tabOrder\": 6}}], \"singleVisual\": {\"visualType\": \"card\", \"projections\": {\"Values\": [{\"queryRef\": \"_Measures.Death Overs SR\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"Death Overs SR\"}, \"Name\": \"_Measures.Death Overs SR\", \"NativeReferenceName\": \"Death Overs SR\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Death Overs Strike Rate'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 212.0,
+          "z": 7,
+          "width": 678.0,
+          "height": 240.0,
+          "config": "{\"name\": \"2e3f25be560642729154\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 212.0, \"z\": 7, \"width\": 678.0, \"height\": 240.0, \"tabOrder\": 7}}], \"singleVisual\": {\"visualType\": \"barChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Gold Player phase stats.batter\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Runs\"}], \"Tooltips\": [{\"queryRef\": \"_Measures.Weighted Strike Rate\"}, {\"queryRef\": \"_Measures.Total Boundaries\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"batter\"}, \"Name\": \"Gold Player phase stats.batter\", \"NativeReferenceName\": \"batter\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Runs\"}, \"Name\": \"_Measures.Total Runs\", \"NativeReferenceName\": \"Total Runs\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Weighted Strike Rate\"}, \"Name\": \"_Measures.Weighted Strike Rate\", \"NativeReferenceName\": \"Weighted Strike Rate\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Boundaries\"}, \"Name\": \"_Measures.Total Boundaries\", \"NativeReferenceName\": \"Total Boundaries\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Top Batters by Total Runs (with Strike Rate in Tooltip)'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 710.0,
+          "y": 212.0,
+          "z": 8,
+          "width": 554.0,
+          "height": 240.0,
+          "config": "{\"name\": \"02c4246a35174601be48\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 710.0, \"y\": 212.0, \"z\": 8, \"width\": 554.0, \"height\": 240.0, \"tabOrder\": 8}}], \"singleVisual\": {\"visualType\": \"hundredPercentStackedBarChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Gold Player phase stats.batter\", \"active\": true}], \"Series\": [{\"queryRef\": \"Gold Player phase stats.over_phase\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Total Runs\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"batter\"}, \"Name\": \"Gold Player phase stats.batter\", \"NativeReferenceName\": \"batter\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"over_phase\"}, \"Name\": \"Gold Player phase stats.over_phase\", \"NativeReferenceName\": \"over_phase\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Runs\"}, \"Name\": \"_Measures.Total Runs\", \"NativeReferenceName\": \"Total Runs\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Run Distribution across Powerplay, Middle & Death Overs'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 16.0,
+          "y": 468.0,
+          "z": 9,
+          "width": 616.0,
+          "height": 236.0,
+          "config": "{\"name\": \"be3586b427e9495ab21b\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 16.0, \"y\": 468.0, \"z\": 9, \"width\": 616.0, \"height\": 236.0, \"tabOrder\": 9}}], \"singleVisual\": {\"visualType\": \"columnChart\", \"projections\": {\"Category\": [{\"queryRef\": \"Gold Player phase stats.over_phase\", \"active\": true}], \"Y\": [{\"queryRef\": \"_Measures.Weighted Strike Rate\"}, {\"queryRef\": \"_Measures.Total Boundaries\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"over_phase\"}, \"Name\": \"Gold Player phase stats.over_phase\", \"NativeReferenceName\": \"over_phase\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Weighted Strike Rate\"}, \"Name\": \"_Measures.Weighted Strike Rate\", \"NativeReferenceName\": \"Weighted Strike Rate\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Boundaries\"}, \"Name\": \"_Measures.Total Boundaries\", \"NativeReferenceName\": \"Total Boundaries\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Average Strike Rate and Total Boundaries by Over Phase'\"}}}}}]}}}",
+          "filters": "[]"
+        },
+        {
+          "x": 648.0,
+          "y": 468.0,
+          "z": 10,
+          "width": 616.0,
+          "height": 236.0,
+          "config": "{\"name\": \"63e954b6bbaa4ae09b47\", \"layouts\": [{\"id\": 0, \"position\": {\"x\": 648.0, \"y\": 468.0, \"z\": 10, \"width\": 616.0, \"height\": 236.0, \"tabOrder\": 10}}], \"singleVisual\": {\"visualType\": \"tableEx\", \"projections\": {\"Values\": [{\"queryRef\": \"Gold Player phase stats.batter\"}, {\"queryRef\": \"Gold Player phase stats.over_phase\"}, {\"queryRef\": \"_Measures.Total Runs\"}, {\"queryRef\": \"Gold Player phase stats.balls_faced\"}, {\"queryRef\": \"_Measures.Total Boundaries\"}, {\"queryRef\": \"_Measures.Weighted Strike Rate\"}]}, \"prototypeQuery\": {\"Version\": 2, \"From\": [{\"Name\": \"t_0\", \"Entity\": \"Gold Player phase stats\", \"Type\": 0}, {\"Name\": \"t_1\", \"Entity\": \"_Measures\", \"Type\": 0}], \"Select\": [{\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"batter\"}, \"Name\": \"Gold Player phase stats.batter\", \"NativeReferenceName\": \"batter\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"over_phase\"}, \"Name\": \"Gold Player phase stats.over_phase\", \"NativeReferenceName\": \"over_phase\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Runs\"}, \"Name\": \"_Measures.Total Runs\", \"NativeReferenceName\": \"Total Runs\"}, {\"Column\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_0\"}}, \"Property\": \"balls_faced\"}, \"Name\": \"Gold Player phase stats.balls_faced\", \"NativeReferenceName\": \"balls_faced\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Total Boundaries\"}, \"Name\": \"_Measures.Total Boundaries\", \"NativeReferenceName\": \"Total Boundaries\"}, {\"Measure\": {\"Expression\": {\"SourceRef\": {\"Source\": \"t_1\"}}, \"Property\": \"Weighted Strike Rate\"}, \"Name\": \"_Measures.Weighted Strike Rate\", \"NativeReferenceName\": \"Weighted Strike Rate\"}]}, \"objects\": {\"general\": [{\"properties\": {\"title\": {\"expr\": {\"Literal\": {\"Value\": \"'Interactive Batter Leaderboard & Phase Efficiency'\"}}}}}]}}}",
+          "filters": "[]"
+        }
+      ]
+    }
+  ]
+}
